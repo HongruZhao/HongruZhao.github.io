@@ -17,4 +17,4 @@ Email: zhao1118 at umn dot edu
 
 My research interests lie broadly in high-dimensional statistics, deep learning theory, sequential analysis, distributed inference, and nonconvex minimization.
 
-Here is a current copy of my [CV](https://hongruzhao.github.io/files/CVJuly.pdf).
+Here is a current copy of my [CV](https://hongruzhao.github.io/files/CVJulyV2.pdf).
