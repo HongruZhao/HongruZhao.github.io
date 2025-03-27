@@ -1,5 +1,5 @@
 ---
-title: "Globally-Optimal Greedy Experiment Selection for Active Sequential Estimation"
+title: "Globally-Optimal Greedy Active Sequential Estimation"
 collection: publications
 date: 2025-03-15
 paperurl: 'https://ieeexplore.ieee.org/document/10926541'
