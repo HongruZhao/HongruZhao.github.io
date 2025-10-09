@@ -1,7 +1,6 @@
 ---
-title: "Subspace decompositions for association structure learning in multivariate categorical response regression"
+title: "Subspace Decompositions for Association Structure Learning in Multivariate Categorical Response Regression"
 collection: publications
 date: 2025-03-14
-paperurl: 'https://hongruzhao.github.io/files/SUBSPACE_DECOMPOSITIONS_AOS_manuscript-combined_JRSSb.pdf'
-citation: 'Hongru Zhao, Aaron J. Molstad, and Adam J. Rothman. Submitted, Journal of the American Statistical Association (2025)'
+citation: 'Hongru Zhao, Aaron J. Molstad, and Adam J. Rothman. Submitted, Journal of Machine Learning Research (2025)'
 ---
