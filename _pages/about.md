@@ -12,7 +12,7 @@ redirect_from:
 I earned my Ph.D. in Statistics from the University of Minnesota–Twin Cities and now serve as an IRSA Faragher Distinguished Postdoctoral Fellow, with additional duties as Seminar Coordinator for Fall 2025.
 
 
-Contact:<br>495 Ford Hall Building <br>224 Church St SE, Minneapolis, MN 55455
+Contact:<br>355 Ford Hall Building <br>224 Church St SE, Minneapolis, MN 55455
 
 Email: zhao1118 at umn dot edu
 
