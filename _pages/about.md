@@ -16,6 +16,6 @@ Contact:<br>495 Ford Hall Building <br>224 Church St SE, Minneapolis, MN 55455
 
 Email: zhao1118 at umn dot edu
 
-My research interests lie broadly in high-dimensional statistics, sequential analysis, astrostatistics, deep learning theory, generative model, quantum tomography, distributed inference, random matrix theory, nonconvex optimization.
+My research interests lie broadly in high-dimensional statistics, generative AI and diffusion models, reinforcement learning from human feedback, astrostatistics, sequential analysis, quantum tomography, random matrix theory, nonconvex optimization.
 
-Here is a current copy of my [CV](https://hongruzhao.github.io/files/CV2025March.pdf).
+Here is a current copy of my [CV](https://hongruzhao.github.io/files/CV2025Nov.pdf).
