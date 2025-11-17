@@ -24,8 +24,6 @@ author_profile: true
     <strong>{{ pub.title }}</strong>. {{ pub.citation }}
     {% if pub.paperurl %}
       <a href="{{ pub.paperurl }}">Paper</a>
-    {% elsif pub.url %}
-      <a href="{{ pub.url | relative_url }}">Details</a>
     {% endif %}
   </li>
   {% endfor %}
@@ -43,8 +41,6 @@ author_profile: true
     <strong>{{ pub.title }}</strong>. {{ pub.citation }}
     {% if pub.paperurl %}
       <a href="{{ pub.paperurl }}">Paper</a>
-    {% elsif pub.url %}
-      <a href="{{ pub.url | relative_url }}">Details</a>
     {% endif %}
   </li>
   {% endfor %}
@@ -62,8 +58,6 @@ author_profile: true
     <strong>{{ pub.title }}</strong>. {{ pub.citation }}
     {% if pub.paperurl %}
       <a href="{{ pub.paperurl }}">Paper</a>
-    {% elsif pub.url %}
-      <a href="{{ pub.url | relative_url }}">Details</a>
     {% endif %}
   </li>
   {% endfor %}
