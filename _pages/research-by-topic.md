@@ -18,7 +18,7 @@ topics:
     id: pdes-and-dynamical-systems
 ---
 
-The sections below automatically gather every publication and preprint, grouped by the research threads that colleagues most often ask about. As you add new papers to the `_publications/` collection with the appropriate `topics` tag, they will appear in the relevant section without further editing.
+<!-- The sections below automatically gather every publication and preprint, grouped by the research threads that colleagues most often ask about. As you add new papers to the `_publications/` collection with the appropriate `topics` tag, they will appear in the relevant section without further editing. -->
 
 {% assign ordered_pubs = site.publications | sort: 'date' | reverse %}
 
@@ -33,8 +33,6 @@ The sections below automatically gather every publication and preprint, grouped 
     <strong>{{ pub.title }}</strong>. {{ pub.citation }}
     {% if pub.paperurl %}
       <a href="{{ pub.paperurl }}">Paper</a>
-    {% elsif pub.url %}
-      <a href="{{ pub.url | relative_url }}">Details</a>
     {% endif %}
   </li>
   {% endfor %}
