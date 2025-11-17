@@ -6,4 +6,5 @@ paperurl: 'https://arxiv.org/abs/2511.09002'
 citation: 'Hongru Zhao, Jinwen Fu, and Tuan Pham. Preprint.'
 topics:
   - generative-ai-and-reiforcement-learning
+research_section: preprints
 ---
