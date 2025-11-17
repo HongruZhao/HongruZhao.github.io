@@ -1,12 +1,59 @@
 ---
-layout: archive
+layout: single
 title: "Teaching"
 permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
+<style>
+.teaching-section {
+  margin-bottom: 1.5rem;
+}
+.teaching-section h2 {
+  margin-bottom: 0.25rem;
+}
+.teaching-note {
+  margin-top: 0;
+  font-style: italic;
+}
+.teaching-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.35rem 0 0;
+}
+.teaching-list li {
+  margin: 0.35rem 0;
+}
+.teaching-list li::before {
+  content: "\2022";
+  color: #c47f00;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: 0;
+}
+.teaching-term {
+  display: inline-block;
+  min-width: 95px;
+  font-weight: 600;
+}
+.teaching-course {
+  font-weight: 600;
+  color: #c47f00;
+}
+.teaching-meta {
+  font-style: italic;
+}
+</style>
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="teaching-section">
+  <h2>Teaching at the University of Minnesota</h2>
+  <p class="teaching-note">All courses listed below were taught at the School of Statistics, UMN.</p>
+  <ul class="teaching-list">
+    <li><span class="teaching-term">Fall 2025</span><span class="teaching-course">STAT 4102: Theory of Statistics II</span> <span class="teaching-meta">— Undergraduate course</span></li>
+    <li><span class="teaching-term">Spring 2025</span><span class="teaching-course">STAT 3301: Regression and Statistical Computing</span> <span class="teaching-meta">— Undergraduate course</span></li>
+    <li><span class="teaching-term">Fall 2024</span><span class="teaching-course">STAT 4101: Theory of Statistics I</span> <span class="teaching-meta">— Undergraduate course</span></li>
+    <li><span class="teaching-term">Spring 2024</span><span class="teaching-course">STAT 3301: Regression and Statistical Computing</span> <span class="teaching-meta">— Undergraduate course</span></li>
+    <li><span class="teaching-term">Fall 2023</span><span class="teaching-course">STAT 3011: Intro Statistical Analysis</span> <span class="teaching-meta">— Undergraduate course</span></li>
+  </ul>
+</div>
