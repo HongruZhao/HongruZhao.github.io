@@ -7,9 +7,9 @@
 {% endif %}
 
 {% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+  {% assign title = post.title | markdownify | strip_html %}
 {% else %}
-  {% assign title = post.title %}
+  {% assign title = post.title | strip_html %}
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
@@ -26,7 +26,7 @@
       </div>
     {% endif %}
     <h2 class="archive__item-title" itemprop="headline">
-      {{ title }}
+      <span class="archive__item-title-text">{{ title }}</span>
     </h2>
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
