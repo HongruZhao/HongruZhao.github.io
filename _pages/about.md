@@ -24,3 +24,12 @@ Here is a current copy of my [CV](https://hongruzhao.github.io/files/CV2025Nov.p
 ## Recent highlights
 
 My latest preprints cover self-consuming generative models, and stochastic gravitational-wave background detection.
+
+
+
+## Education
+
+- **IRSA Faragher Distinguished Postdoctoral Fellow**, School of Statistics, University of Minnesota (2025–2026)
+- **Ph.D. in Statistics**, University of Minnesota (2025) — Adviser: Adam J. Rothman
+- **M.S. in Mathematical Sciences**, University of Minnesota (2020)
+- **B.S. in Statistics**, Jilin University, China (2018)
