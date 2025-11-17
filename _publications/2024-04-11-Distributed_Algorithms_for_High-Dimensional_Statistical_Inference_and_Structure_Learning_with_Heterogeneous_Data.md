@@ -7,4 +7,5 @@ paperurl: 'https://www3.stat.sinica.edu.tw/ss_newpaper/SS-2025-0087_na.pdf'
 citation: 'Hongru Zhao, and Xiaotong Shen. Statistica Sinica (2025).'
 topics:
   - high-dimensional-statistics
+research_section: theory-methodology
 ---
