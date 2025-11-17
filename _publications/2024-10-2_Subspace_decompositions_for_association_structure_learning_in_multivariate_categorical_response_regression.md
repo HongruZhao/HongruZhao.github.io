@@ -5,4 +5,5 @@ date: 2025-03-14
 citation: 'Hongru Zhao, Aaron J. Molstad, and Adam J. Rothman. Preprint (2025)'
 topics:
   - high-dimensional-statistics
+research_section: preprints
 ---
