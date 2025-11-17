@@ -8,9 +8,7 @@ redirect_from:
 ---
 
 
-
-I earned my Ph.D. in Statistics from the University of Minnesota–Twin Cities and now serve as an IRSA Faragher Distinguished Postdoctoral Fellow, with additional duties as Seminar Coordinator for Fall 2025.
-
+I am the IRSA Faragher Distinguished Postdoctoral Fellow for 2025–2026 in the School of Statistics at the University of Minnesota–Twin Cities and serve as Seminar Coordinator for Fall 2025.
 
 Contact:<br>355 Ford Hall Building <br>224 Church St SE, Minneapolis, MN 55455
 
@@ -29,7 +27,6 @@ My latest preprints cover self-consuming generative models, and stochastic gravi
 
 ## Education
 
-- **IRSA Faragher Distinguished Postdoctoral Fellow**, School of Statistics, University of Minnesota (2025–2026)
 - **Ph.D. in Statistics**, University of Minnesota (2025) — Adviser: Adam J. Rothman
 - **M.S. in Mathematical Sciences**, University of Minnesota (2020)
 - **B.S. in Statistics**, Jilin University, China (2018)
