@@ -6,4 +6,5 @@ paperurl: 'https://www.aimsciences.org/article/doi/10.3934/dcdsb.2023129'
 citation: 'Kangsheng Liu, Zhuangyi Liu, and Hongru Zhao. Discrete and Continuous Dynamical Systems-B 29, no. 3 (2024): 1206-1216.'
 topics:
   - pdes-and-dynamical-systems
+research_section: theory-methodology
 ---
