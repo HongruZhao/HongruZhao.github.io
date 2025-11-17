@@ -7,4 +7,5 @@ paperurl: 'https://openreview.net/forum?id=jG7ndW7UHp'
 citation: 'Hongru Zhao, Jinchao Xu. Transactions on Machine Learning Research (2024)'
 topics:
   - generative-ai-and-reiforcement-learning
+research_section: theory-methodology
 ---
