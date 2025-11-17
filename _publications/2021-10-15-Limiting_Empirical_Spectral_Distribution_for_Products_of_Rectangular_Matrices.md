@@ -6,5 +6,6 @@ paperurl: 'https://hongruzhao.github.io/files/Limiting_Empirical_Spectral_Distri
 citation: 'Yongcheng Qi, and Hongru Zhao. Journal of Mathematical Analysis and Applications 502, no. 2 (2021): 125237.'
 topics:
   - high-dimensional-statistics
+research_section: theory-methodology
 ---
 
