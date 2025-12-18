@@ -30,7 +30,7 @@ topics:
 <ul class="research-topic-list">
   {% for pub in topic_pubs %}
   <li>
-    <strong>{{ pub.title }}</strong>. {{ pub.citation }}
+    <strong>{{ pub.title }}</strong>. {{ pub.citation | replace: 'Hongru Zhao', '<u>Hongru Zhao</u>' }}
     {% if pub.paperurl %}
       <a href="{{ pub.paperurl }}">Paper</a>
     {% endif %}
