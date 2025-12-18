@@ -21,8 +21,8 @@ author_profile: true
 <ul>
   {% for pub in preprints %}
   <li>
-    <strong>{{ pub.title }}</strong>. {{ pub.citation }}
-    {% if pub.paperurl %}
+    <strong>{{ pub.title }}</strong>. {{ pub.citation | replace: 'Hongru Zhao', '<u>Hongru Zhao</u>' }}
+        {% if pub.paperurl %}
       <a href="{{ pub.paperurl }}">Paper</a>
     {% endif %}
   </li>
@@ -38,8 +38,8 @@ author_profile: true
 <ul>
   {% for pub in theory_pubs %}
   <li>
-    <strong>{{ pub.title }}</strong>. {{ pub.citation }}
-    {% if pub.paperurl %}
+    <strong>{{ pub.title }}</strong>. {{ pub.citation | replace: 'Hongru Zhao', '<u>Hongru Zhao</u>' }}
+        {% if pub.paperurl %}
       <a href="{{ pub.paperurl }}">Paper</a>
     {% endif %}
   </li>
@@ -55,8 +55,8 @@ author_profile: true
 <ul>
   {% for pub in application_pubs %}
   <li>
-    <strong>{{ pub.title }}</strong>. {{ pub.citation }}
-    {% if pub.paperurl %}
+    <strong>{{ pub.title }}</strong>. {{ pub.citation | replace: 'Hongru Zhao', '<u>Hongru Zhao</u>' }}
+        {% if pub.paperurl %}
       <a href="{{ pub.paperurl }}">Paper</a>
     {% endif %}
   </li>
