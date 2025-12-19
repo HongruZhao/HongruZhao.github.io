@@ -16,8 +16,7 @@ Email: zhao1118 at umn dot edu
 
 My research interests lie broadly in high-dimensional statistics, generative AI and diffusion models, reinforcement learning from human feedback, astrostatistics, sequential analysis, quantum tomography, random matrix theory, nonconvex optimization.
 
-Here is a current copy of my [CV](https://hongruzhao.github.io/files/CV2025Nov.pdf).
-
+Here is a current copy of my [CV](https://hongruzhao.github.io/files/CV.pdf).
 
 ## Recent highlights
 
