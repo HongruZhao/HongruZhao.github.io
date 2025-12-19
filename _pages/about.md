@@ -28,4 +28,4 @@ My latest preprints cover quantum tomography, self-consuming generative models, 
 
 - **Ph.D. in Statistics**, University of Minnesota (2025) — Adviser: Adam J. Rothman
 - **M.S. in Mathematical Sciences**, University of Minnesota (2020)
-- **B.S. in Statistics**, Jilin University, China (2018)
+<!-- - **B.S. in Statistics**, Jilin University, China (2018) -->
