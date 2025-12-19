@@ -30,6 +30,12 @@ When you are initially working your website, it is very useful to be able to pre
 If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
 
 # Maintenance 
+# Updating your CV on the site
+
+1. Save the latest PDF of your curriculum vitae as `files/CV.pdf`. This URL (`https://hongruzhao.github.io/files/CV.pdf`) is linked from the About page.
+2. If you want to keep older versions around, you can leave the dated filenames (for example, `CV2025Nov.pdf`) alongside `CV.pdf` without changing any links.
+
+# Maintenance
 
 Bug reports and feature requests to the template  should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
 
