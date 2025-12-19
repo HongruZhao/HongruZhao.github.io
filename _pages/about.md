@@ -20,7 +20,7 @@ Here is a current copy of my [CV](https://hongruzhao.github.io/files/CV.pdf).
 
 ## Recent highlights
 
-My latest preprints cover self-consuming generative models, and stochastic gravitational-wave background detection.
+My latest preprints cover quantum tomography, self-consuming generative models, and stochastic gravitational-wave background detection.
 
 
 
