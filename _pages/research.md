@@ -10,6 +10,7 @@ author_profile: true
 - Generative AI and reinforcement learning
 - Adaptive design and sequential estimation
 - Astrostatistics
+- Quantum tomography
 - Random matrix theory
 - PDEs and dynamical systems
 
