@@ -26,7 +26,13 @@
       </div>
     {% endif %}
     <h2 class="archive__item-title" itemprop="headline">
-      <span class="archive__item-title-text">{{ title }}</span>
+      <span class="archive__item-title-text">
+        {% if post.slidesurl %}
+          <a href="{{ post.slidesurl }}" target="_blank" rel="noopener noreferrer">{{ title }}</a>
+        {% else %}
+          {{ title }}
+        {% endif %}
+      </span>
     </h2>
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
