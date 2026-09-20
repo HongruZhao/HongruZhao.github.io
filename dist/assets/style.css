@@ -160,7 +160,7 @@
 .publication-meta{align-items:flex-start;gap:10px 16px}
 .publication-details{display:flex;flex:1 1 24rem;flex-wrap:wrap;align-items:center;min-width:0;gap:7px 9px}
 .publication-venue{max-width:100%;font-size:.875rem;line-height:1.5;overflow-wrap:anywhere}
-.publication-meta>.paper-link{flex-shrink:0;padding-top:4px}
+.publication-links{display:flex;flex-wrap:wrap;flex:0 0 auto;max-width:100%;gap:6px 16px;padding-top:4px}
 .paper-tag{
   display:inline-flex;align-items:center;max-width:100%;padding:3px 9px;
   border:1px solid color-mix(in srgb,var(--topic-color) 40%,var(--surface));border-radius:3px;

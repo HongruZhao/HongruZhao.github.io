@@ -6,6 +6,7 @@ The public website is **https://hongruzhao.github.io/**. It includes research by
 
 - Update publications, research categories, courses, and talks in `content/site.json`.
 - Set a paper's `hidden` field to `true` to temporarily remove it from the website while preserving its details for restoration.
+- Add `lean_url` for a paper's verification repository and `lean_scope` to describe the checked scope shown on hover.
 - Update the homepage introduction and CV summary in `build.py`.
 - Edit a blog post in `content/posts/`. Keep its filename to preserve its web address, and update its `updated` date when making a substantive revision.
 - Upload images and the current CV PDF to `dist/assets/`.

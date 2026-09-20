@@ -23,6 +23,8 @@
       "year": 2026,
       "venue": "Preprint",
       "url": "https://zenodo.org/records/22856033",
+      "lean_url": "https://github.com/HongruZhao/ComplexGramHafnians",
+      "lean_scope": "Lean verification of Theorems 2.1 and 2.3 without additional scientific axioms.",
       "topics": [
         "Quantum Information Science"
       ],
@@ -41,6 +43,8 @@
       "year": 2026,
       "venue": "Preprint",
       "url": "https://arxiv.org/abs/2609.06526",
+      "lean_url": "https://github.com/HongruZhao/RealGramHafnians",
+      "lean_scope": "Lean verification of Theorems 2.1 and 2.3 without additional mathematical axioms.",
       "topics": [
         "Quantum Information Science"
       ],
@@ -59,6 +63,8 @@
       "year": 2026,
       "venue": "Preprint",
       "url": "https://arxiv.org/abs/2609.01008",
+      "lean_url": "https://github.com/HongruZhao/UniformHiding",
+      "lean_scope": "Lean verification of uniform hiding and Route 1 relative accuracy, conditional on four cited literature inputs.",
       "topics": [
         "Quantum Information Science"
       ],
@@ -112,6 +118,8 @@
       "year": 2026,
       "venue": "Preprint",
       "url": "https://arxiv.org/abs/2608.12242",
+      "lean_url": "https://github.com/HongruZhao/LogDetBerryEsseen",
+      "lean_scope": "Lean proofs of sharp Berry–Esseen bounds for Gaussian sample-correlation log determinants.",
       "topics": [
         "Random matrix theory"
       ],

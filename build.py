@@ -118,12 +118,14 @@ def paper_item(p, heading_level=3):
     if p['url']:
         title = f'<a href="{E(p["url"])}">{title}</a>'
     paperlink = f'<a class="paper-link" href="{E(p["url"])}">{E(p.get("link_label", "Paper"))} <span aria-hidden="true">↗</span></a>' if p['url'] else ''
+    leanlink = f'<a class="paper-link lean-link" href="{E(p["lean_url"])}" title="{E(p.get("lean_scope", "Lean proof repository"))}">Lean verified <span aria-hidden="true">↗</span></a>' if p.get('lean_url') else ''
+    links = f'<div class="publication-links">{paperlink}{leanlink}</div>' if paperlink or leanlink else ''
     tags = []
     for tag_id in p['tags']:
         tag = DATA['paper_tag_definitions'][tag_id]
         tags.append(f'<span class="paper-tag" data-tag-kind="{E(tag["kind"])}" data-topic-color="{E(tag["color"])}">{E(tag["label"])}</span>')
     metadata = f'<div class="publication-details"><span class="publication-venue">{E(p["venue"])} · {p["year"]}</span>{"".join(tags)}</div>'
-    return f'<article class="publication" id="{p["id"]}"><h{heading_level}>{title}</h{heading_level}><p class="authors">{authors}</p><div class="publication-meta">{metadata}{paperlink}</div></article>'
+    return f'<article class="publication" id="{p["id"]}"><h{heading_level}>{title}</h{heading_level}><p class="authors">{authors}</p><div class="publication-meta">{metadata}{links}</div></article>'
 
 pubs='<div class="page-heading"><h1>Publications</h1><p><a href="../topics/">Explore Research by Topic</a></p></div>'
 published = sorted(
