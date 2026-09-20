@@ -1,0 +1,19 @@
+date,catalog_records,marked_resolved,source_type,source_url
+2026-07-27,75,,repository snapshot,https://github.com/mrconter1/vibemathed/blob/5ad3befbe0d1681612293c7224f4aabdac989f29/src/data/problems.json
+2026-07-30,201,155,repository snapshot,https://github.com/mrconter1/vibemathed/blob/f599b48a55cca4941766f1881c3b82b5d71f9412/src/data/problems.json
+2026-07-31,221,168,repository snapshot,https://github.com/mrconter1/vibemathed/blob/cb8c72aaa3844ca1f0d669bbca64b4999bb37540/src/data/problems.json
+2026-08-01,249,172,repository snapshot,https://github.com/mrconter1/vibemathed/blob/16d011b6d3381b571a3b15b77bfdaba40329ed1a/src/data/problems.json
+2026-08-02,270,188,repository snapshot,https://github.com/mrconter1/vibemathed/blob/be72541b456e2de78040c8c0458b466de3727a74/src/data/problems.json
+2026-08-03,427,312,repository snapshot,https://github.com/mrconter1/vibemathed/blob/19e96c0cf091bc7f0b8671451632812b9dcd2e05/src/data/problems.json
+2026-08-04,427,312,repository snapshot,https://github.com/mrconter1/vibemathed/blob/0b83ce72d2e921e56d767c7d6dc289b07a7abc37/src/data/problems.json
+2026-08-06,466,347,repository snapshot,https://github.com/mrconter1/vibemathed/blob/2cd4c7339fe99b312bc91fdcb20082e4f6df7909/src/data/problems.json
+2026-08-07,509,373,repository snapshot,https://github.com/mrconter1/vibemathed/blob/8cc565189fa21acd988d3fa9dc1da870bebb99ee/src/data/problems.json
+2026-08-08,510,374,repository snapshot,https://github.com/mrconter1/vibemathed/blob/59e0d91f8e1e09977deb24496caadec1b1a6663f/src/data/problems.json
+2026-08-09,520,379,repository snapshot,https://github.com/mrconter1/vibemathed/blob/5f0f067a8c7e7ae295cde25d31324ea217e154f7/src/data/problems.json
+2026-08-10,528,384,repository snapshot,https://github.com/mrconter1/vibemathed/blob/46532b87b94d5b85f8a7b7644da7161d8e118b02/src/data/problems.json
+2026-08-12,552,405,repository snapshot,https://github.com/mrconter1/vibemathed/blob/06c1a3a051c8899a3d29b14e917f1f37da0471dd/src/data/problems.json
+2026-08-13,561,412,repository snapshot,https://github.com/mrconter1/vibemathed/blob/8ab6f75b964ab7ffce5f428eefe553d06731f5b6/src/data/problems.json
+2026-08-14,565,416,repository snapshot,https://github.com/mrconter1/vibemathed/blob/83d116b1d5cfc209c5fd931ddd8fffa3ecf99dff/src/data/problems.json
+2026-08-17,586,430,repository snapshot,https://github.com/mrconter1/vibemathed/blob/3cdb603e144ad0e6311f381e1fec784a0e8381cc/src/data/problems.json
+2026-09-04,664,464,repository snapshot,https://github.com/mrconter1/vibemathed/blob/d358b9b10cc9d8abdc4a6d3d26d7c9726bb9a113/src/data/problems.json
+2026-09-14,717,492,live API snapshot,https://vibemathed.com/api/dataset

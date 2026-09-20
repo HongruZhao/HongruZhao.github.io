@@ -1,0 +1,651 @@
+{
+  "name": "Hongru Zhao",
+  "role": "IRSA Faragher Distinguished Postdoctoral Fellow",
+  "affiliation": "School of Statistics · University of Minnesota–Twin Cities",
+  "email": "zhao1118@umn.edu",
+  "background": "mist",
+  "background_image": "",
+  "topics": [
+    "High-dimensional statistics",
+    "Statistical inference and experimental design",
+    "Generative AI and reinforcement learning",
+    "Random matrix theory",
+    "Others",
+    "Quantum Information Science",
+    "Astrostatistics",
+    "Other applications"
+  ],
+  "papers": [
+    {
+      "id": "local-anticoncentration",
+      "title": "Local Anticoncentration for Gaussian Boson Sampling via Conditional Wishart Geometry",
+      "authors": "Hongru Zhao",
+      "year": 2026,
+      "venue": "Preprint",
+      "url": "",
+      "topics": [
+        "Quantum Information Science"
+      ],
+      "preprint": true,
+      "tags": [
+        "random-matrix-theory",
+        "anticoncentration",
+        "gaussian-boson-sampling",
+        "quantum-advantage"
+      ]
+    },
+    {
+      "id": "shifted-anticoncentration",
+      "title": "Shifted Anticoncentration for Real Gram Hafnians and Symmetric Gaussian Hafnians",
+      "authors": "Hongru Zhao",
+      "year": 2026,
+      "venue": "Preprint",
+      "url": "https://arxiv.org/abs/2609.06526",
+      "topics": [
+        "Quantum Information Science"
+      ],
+      "preprint": true,
+      "tags": [
+        "random-matrix-theory",
+        "anticoncentration",
+        "gaussian-boson-sampling",
+        "quantum-advantage"
+      ]
+    },
+    {
+      "id": "uniform-hiding",
+      "title": "Uniform Hiding of Haar Block Transpose Gram Matrices",
+      "authors": "Hongru Zhao",
+      "year": 2026,
+      "venue": "Preprint",
+      "url": "https://arxiv.org/abs/2609.01008",
+      "topics": [
+        "Quantum Information Science"
+      ],
+      "preprint": true,
+      "tags": [
+        "random-matrix-theory",
+        "haar-gaussian-comparison",
+        "gaussian-boson-sampling",
+        "quantum-advantage"
+      ]
+    },
+    {
+      "id": "weak-typicality",
+      "title": "Weak Typicality of von Neumann Entanglement Entropy in Gaussian Boson Sampling",
+      "authors": "Hongru Zhao",
+      "year": 2026,
+      "venue": "Preprint",
+      "url": "https://arxiv.org/abs/2608.17274",
+      "topics": [
+        "Quantum Information Science"
+      ],
+      "preprint": true,
+      "tags": [
+        "random-matrix-theory",
+        "gaussian-boson-sampling",
+        "quantum-entanglement"
+      ]
+    },
+    {
+      "id": "gram-hafnian-moments",
+      "title": "Exact Moments of Gaussian Gram Hafnians Reveal an $n^2/\\log n$ Threshold for Weak Anticoncentration",
+      "authors": "Hongru Zhao",
+      "year": 2026,
+      "venue": "Preprint",
+      "url": "https://arxiv.org/abs/2608.17065",
+      "topics": [
+        "Quantum Information Science"
+      ],
+      "preprint": true,
+      "tags": [
+        "random-matrix-theory",
+        "anticoncentration",
+        "gaussian-boson-sampling",
+        "quantum-advantage"
+      ]
+    },
+    {
+      "id": "sharp-berry-esseen",
+      "title": "Sharp Berry–Esseen Bounds for the Log Determinant of a Gaussian Sample Correlation Matrix",
+      "authors": "Hongru Zhao",
+      "year": 2026,
+      "venue": "Preprint",
+      "url": "https://arxiv.org/abs/2608.12242",
+      "topics": [
+        "Random matrix theory"
+      ],
+      "preprint": true,
+      "tags": [
+        "random-matrix-theory",
+        "sample-correlation-matrix"
+      ]
+    },
+    {
+      "id": "correlation-log-determinant",
+      "title": "On the Log Determinant of Sample Correlation Matrices under Gaussianity",
+      "authors": "Hongru Zhao",
+      "year": 2026,
+      "venue": "Preprint",
+      "url": "https://arxiv.org/abs/2608.00565",
+      "topics": [
+        "Random matrix theory"
+      ],
+      "preprint": true,
+      "tags": [
+        "random-matrix-theory",
+        "sample-correlation-matrix"
+      ]
+    },
+    {
+      "id": "karlin-counterexample",
+      "title": "A Counterexample to Karlin’s Conjectured Converse for Admissibility in Exponential Families",
+      "authors": "Hongru Zhao and Galin Jones",
+      "year": 2026,
+      "venue": "Preprint",
+      "url": "",
+      "topics": [
+        "Statistical inference and experimental design"
+      ],
+      "preprint": true,
+      "tags": [
+        "statistical-decision-theory"
+      ]
+    },
+    {
+      "id": "quantum-design",
+      "title": "Optimal and Adaptive Design for Quantum Tomography",
+      "authors": "Hongru Zhao and R. Oliver VandenBerg",
+      "year": 2026,
+      "venue": "Preprint",
+      "url": "",
+      "topics": [
+        "Quantum Information Science",
+        "Statistical inference and experimental design"
+      ],
+      "preprint": true,
+      "tags": [
+        "experimental-design",
+        "quantum-tomography"
+      ]
+    },
+    {
+      "id": "paper-1",
+      "title": "Convex Reparameterization and Self-Concordant Algorithms for Multivariate Regression with Covariance Estimation",
+      "authors": "Hongru Zhao and Huiqian Feng",
+      "year": 2026,
+      "venue": "Preprint",
+      "url": "https://arxiv.org/abs/2608.18441",
+      "topics": [
+        "High-dimensional statistics"
+      ],
+      "preprint": true,
+      "tags": [
+        "high-dimensional-statistics",
+        "optimization"
+      ]
+    },
+    {
+      "id": "paper-2",
+      "title": "Convergence and Stability Analysis of Self-Consuming Generative Models with Heterogeneous Human Curation",
+      "authors": "Hongru Zhao, Jinwen Fu and Tuan Pham",
+      "year": 2025,
+      "venue": "Preprint",
+      "url": "https://arxiv.org/abs/2511.09002",
+      "topics": [
+        "Generative AI and reinforcement learning"
+      ],
+      "preprint": true,
+      "tags": [
+        "dynamical-systems",
+        "generative-ai",
+        "learning-from-human-feedback"
+      ]
+    },
+    {
+      "id": "allocation-design",
+      "title": "Allocation-Constrained Adaptive Design and Sequential Estimation: Theory and Application to Bradley–Terry–Davidson Models",
+      "authors": "Hongru Zhao",
+      "year": 2025,
+      "venue": "Preprint",
+      "url": "",
+      "topics": [
+        "Statistical inference and experimental design",
+        "Generative AI and reinforcement learning"
+      ],
+      "preprint": true,
+      "tags": [
+        "experimental-design",
+        "sequential-inference"
+      ]
+    },
+    {
+      "id": "paper-3",
+      "title": "Subspace Decompositions for Association Structure Learning in Multivariate Categorical Response Regression",
+      "authors": "Hongru Zhao, Aaron J. Molstad and Adam J. Rothman",
+      "year": 2025,
+      "venue": "Preprint",
+      "url": "https://arxiv.org/abs/2410.04356",
+      "topics": [
+        "High-dimensional statistics"
+      ],
+      "preprint": true,
+      "tags": [
+        "high-dimensional-statistics",
+        "structure-learning"
+      ]
+    },
+    {
+      "id": "paper-4",
+      "title": "Globally-Optimal Greedy Active Sequential Estimation",
+      "authors": "Xiaoou Li and Hongru Zhao",
+      "year": 2025,
+      "venue": "IEEE Transactions on Information Theory",
+      "url": "https://ieeexplore.ieee.org/document/10926541",
+      "topics": [
+        "Statistical inference and experimental design"
+      ],
+      "preprint": false,
+      "tags": [
+        "experimental-design",
+        "sequential-inference"
+      ]
+    },
+    {
+      "id": "paper-5",
+      "title": "Distributed Algorithms for High-Dimensional Statistical Inference and Structure Learning with Heterogeneous Data",
+      "authors": "Hongru Zhao and Xiaotong Shen",
+      "year": 2025,
+      "venue": "Statistica Sinica · Forthcoming",
+      "url": "https://www3.stat.sinica.edu.tw/preprint/SS-2025-0087_Preprint.pdf",
+      "topics": [
+        "High-dimensional statistics"
+      ],
+      "preprint": false,
+      "tags": [
+        "high-dimensional-statistics",
+        "structure-learning",
+        "distributed-inference"
+      ],
+      "include_in_publications": true
+    },
+    {
+      "id": "paper-6",
+      "title": "Convergence Analysis and Trajectory Comparison of Gradient Descent for Overparameterized Deep Linear Networks",
+      "authors": "Hongru Zhao and Jinchao Xu",
+      "year": 2024,
+      "venue": "Transactions on Machine Learning Research",
+      "url": "https://openreview.net/forum?id=jG7ndW7UHp",
+      "topics": [
+        "Generative AI and reinforcement learning"
+      ],
+      "preprint": false,
+      "tags": [
+        "deep-learning-theory",
+        "optimization"
+      ]
+    },
+    {
+      "id": "paper-7",
+      "title": "Exponential stability of the linear KdV-BBM equation",
+      "authors": "Kangsheng Liu, Zhuangyi Liu and Hongru Zhao",
+      "year": 2024,
+      "venue": "Discrete and Continuous Dynamical Systems–B",
+      "url": "https://www.aimsciences.org/article/doi/10.3934/dcdsb.2023129",
+      "topics": [
+        "Others"
+      ],
+      "preprint": false,
+      "tags": [
+        "applied-mathematics",
+        "partial-differential-equations"
+      ]
+    },
+    {
+      "id": "paper-8",
+      "title": "Limiting empirical spectral distribution for products of rectangular matrices",
+      "authors": "Yongcheng Qi and Hongru Zhao",
+      "year": 2021,
+      "venue": "Journal of Mathematical Analysis and Applications",
+      "url": "https://hongruzhao.github.io/files/Limiting_Empirical_Spectral_Distribution_for_Products_of_Rectangular_Matrices.pdf",
+      "topics": [
+        "Random matrix theory"
+      ],
+      "preprint": false,
+      "tags": [
+        "random-matrix-theory",
+        "probability"
+      ]
+    },
+    {
+      "id": "paper-9",
+      "title": "Testing models for angular power spectra: A distribution-free approach",
+      "authors": "Sara Algeri, Xiangyu Zhang, Erik Floden, Hongru Zhao, Galin L. Jones, Vuk Mandic and Jesse Miller",
+      "year": 2026,
+      "venue": "Physical Review D",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/74lc-b1gd",
+      "topics": [
+        "Astrostatistics"
+      ],
+      "preprint": false,
+      "tags": [
+        "astrostatistics",
+        "gravitational-waves"
+      ]
+    },
+    {
+      "id": "paper-10",
+      "title": "Validating Angular Power Spectral Models for the Stochastic Gravitational-Wave Background Without Distributional Assumptions",
+      "authors": "Xiangyu Zhang, Erik Floden, Hongru Zhao, Sara Algeri, Galin Jones, Vuk Mandic and Jesse Miller",
+      "year": 2026,
+      "venue": "Physical Review D",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/gpgk-5wd1",
+      "topics": [
+        "Astrostatistics"
+      ],
+      "preprint": false,
+      "tags": [
+        "astrostatistics",
+        "gravitational-waves"
+      ]
+    },
+    {
+      "id": "paper-11",
+      "title": "Microstructure-sensitive modeling of foam concrete based on pore-scale effect quantification and nonlinear assessment of its multifunctional performance",
+      "authors": "Zhibo Zhang, Bixiong Li, Zhiwen Wang, Lianghui Li, Qingshun Nong and Hongru Zhao",
+      "year": 2026,
+      "venue": "Construction and Building Materials",
+      "url": "https://doi.org/10.1016/j.conbuildmat.2026.147017",
+      "topics": [
+        "Other applications"
+      ],
+      "preprint": false,
+      "tags": [
+        "scientific-applications",
+        "materials-modeling"
+      ]
+    }
+  ],
+  "talks": [
+    {
+      "title": "Statistical Inference for the Statistical Isotropy Stochastic Gravitational Wave Background",
+      "date": "July 13, 2026",
+      "place": "Invited Talk and Scholarly Exchange, School of Physics and Astronomy, Sun Yat-sen University, China",
+      "url": "https://hongruzhao.github.io/files/SGWB.pdf"
+    },
+    {
+      "title": "From Fisher Information to Adaptive Experimental Design: Statistical Optimality in Quantum State Tomography",
+      "date": "July 09, 2026",
+      "place": "Invited Talk, Center for Applied Mathematics, Tianjin University, China",
+      "url": "https://hongruzhao.github.io/files/quantum_tomography_Tianjin.pdf"
+    },
+    {
+      "title": "Subspace Decompositions for Association Structure Learning in Multivariate Categorical Response Regression",
+      "date": "August 03, 2025",
+      "place": "Contributed Paper Presentation, Joint Statistical Meetings (JSM), Nashville, TN",
+      "url": ""
+    },
+    {
+      "title": "Structure Learning in Multivariate Categorical Response Regression",
+      "date": "May 31, 2024",
+      "place": "Poster, 2024 IRSA Conference, Minneapolis, MN, USA",
+      "url": ""
+    },
+    {
+      "title": "Exploring the Optimization Landscape and Training Dynamics of Deep Linear Networks",
+      "date": "2023",
+      "place": "Colloquium Seminar, Computer, Electrical and Mathematical Science and Engineering Division, King Abdullah University of Science and Technology, Saudi Arabia",
+      "url": ""
+    }
+  ],
+  "teaching": [
+    {
+      "term": "Fall 2026",
+      "course": "STAT 4052: Statistical Machine Learning II",
+      "role": "Graduate Instructor"
+    },
+    {
+      "term": "Spring 2026",
+      "course": "STAT 4052: Statistical Machine Learning II",
+      "role": "Graduate Instructor"
+    },
+    {
+      "term": "Fall 2025",
+      "course": "STAT 4102: Theory of Statistics II",
+      "role": "Graduate Instructor"
+    },
+    {
+      "term": "Spring 2025",
+      "course": "STAT 3301: Regression and Statistical Computing",
+      "role": "Graduate Instructor"
+    },
+    {
+      "term": "Fall 2024",
+      "course": "STAT 4101: Theory of Statistics I",
+      "role": "Graduate Instructor"
+    },
+    {
+      "term": "Spring 2024",
+      "course": "STAT 3301: Regression and Statistical Computing",
+      "role": "Graduate Instructor"
+    },
+    {
+      "term": "Fall 2023",
+      "course": "STAT 3011: Introduction to Statistical Analysis",
+      "role": "Graduate Instructor"
+    },
+    {
+      "term": "Fall 2022",
+      "course": "STAT 5101: Theory of Statistics I",
+      "role": "Graduate Teaching Assistant"
+    },
+    {
+      "term": "Spring 2022",
+      "course": "STAT 5102: Theory of Statistics II",
+      "role": "Graduate Teaching Assistant"
+    },
+    {
+      "term": "Fall 2021",
+      "course": "STAT 3021: Introduction to Probability and Statistics",
+      "role": "Graduate Teaching Assistant"
+    }
+  ],
+  "source": "https://hongruzhao.github.io/",
+  "content_checked": "2026-09-11",
+  "cv_updated": "September 2026",
+  "content_sources": [
+    "CV_job_2026_unOfficial.pdf (September 2026)",
+    "Public arXiv records matched by title and author",
+    "Existing website for retained projects and links",
+    "Statistica Sinica accepted author version for publication status"
+  ],
+  "quantum_subgroups": [
+    {
+      "id": "gaussian-boson-sampling",
+      "title": "Quantum Sampling & Advantage",
+      "paper_ids": [
+        "local-anticoncentration",
+        "shifted-anticoncentration",
+        "uniform-hiding",
+        "gram-hafnian-moments"
+      ],
+      "color": "green"
+    },
+    {
+      "id": "quantum-information-theory",
+      "title": "Quantum Information & Algorithms",
+      "paper_ids": [
+        "weak-typicality"
+      ],
+      "color": "violet"
+    },
+    {
+      "id": "quantum-tomography",
+      "title": "Quantum Characterization & Inference",
+      "paper_ids": [
+        "quantum-design"
+      ],
+      "color": "indigo"
+    }
+  ],
+  "topic_labels": {
+    "High-dimensional statistics": "High-Dimensional Statistics",
+    "Generative AI and reinforcement learning": "Statistical Learning, Generative AI, and Optimization",
+    "Random matrix theory": "Random Matrix Theory",
+    "Astrostatistics": "Astrostatistics",
+    "Other applications": "Other Scientific Applications",
+    "Statistical inference and experimental design": "Statistical Inference and Experimental Design",
+    "Others": "Others"
+  },
+  "topic_aliases": {
+    "Statistical inference and experimental design": [
+      "statistical-decision-theory",
+      "adaptive-design-and-sequential-estimation"
+    ],
+    "Others": [
+      "pdes-and-dynamical-systems"
+    ]
+  },
+  "topic_colors": {
+    "High-dimensional statistics": "blue",
+    "Statistical inference and experimental design": "teal",
+    "Generative AI and reinforcement learning": "violet",
+    "Random matrix theory": "amber",
+    "Others": "slate",
+    "Quantum Information Science": "cyan",
+    "Astrostatistics": "magenta",
+    "Other applications": "rose"
+  },
+  "paper_tag_definitions": {
+    "high-dimensional-statistics": {
+      "label": "High-Dimensional Statistics",
+      "color": "blue",
+      "kind": "field"
+    },
+    "random-matrix-theory": {
+      "label": "Random Matrix Theory",
+      "color": "amber",
+      "kind": "field"
+    },
+    "probability": {
+      "label": "Probability",
+      "color": "olive",
+      "kind": "field"
+    },
+    "applied-mathematics": {
+      "label": "Applied Mathematics",
+      "color": "slate",
+      "kind": "field"
+    },
+    "astrostatistics": {
+      "label": "Astrostatistics",
+      "color": "magenta",
+      "kind": "field"
+    },
+    "scientific-applications": {
+      "label": "Scientific Applications",
+      "color": "rose",
+      "kind": "field"
+    },
+    "gaussian-boson-sampling": {
+      "label": "Gaussian Boson Sampling",
+      "color": "green",
+      "kind": "direction"
+    },
+    "quantum-advantage": {
+      "label": "Quantum Advantage",
+      "color": "rose",
+      "kind": "direction"
+    },
+    "quantum-entanglement": {
+      "label": "Quantum Entanglement",
+      "color": "violet",
+      "kind": "direction"
+    },
+    "quantum-tomography": {
+      "label": "Quantum Tomography",
+      "color": "indigo",
+      "kind": "direction"
+    },
+    "experimental-design": {
+      "label": "Experimental Design",
+      "color": "teal",
+      "kind": "field"
+    },
+    "sequential-inference": {
+      "label": "Sequential Inference",
+      "color": "blue",
+      "kind": "direction"
+    },
+    "statistical-decision-theory": {
+      "label": "Statistical Decision Theory",
+      "color": "slate",
+      "kind": "direction"
+    },
+    "structure-learning": {
+      "label": "Structure Learning",
+      "color": "gold",
+      "kind": "direction"
+    },
+    "generative-ai": {
+      "label": "Generative AI",
+      "color": "magenta",
+      "kind": "direction"
+    },
+    "optimization": {
+      "label": "Optimization",
+      "color": "coral",
+      "kind": "direction"
+    },
+    "distributed-inference": {
+      "label": "Distributed Inference",
+      "color": "pink",
+      "kind": "direction"
+    },
+    "partial-differential-equations": {
+      "label": "Partial Differential Equations",
+      "color": "olive",
+      "kind": "direction"
+    },
+    "gravitational-waves": {
+      "label": "Stochastic Gravitational-Wave Background",
+      "color": "cyan",
+      "kind": "direction"
+    },
+    "materials-modeling": {
+      "label": "Materials Modeling",
+      "color": "amber",
+      "kind": "direction"
+    },
+    "deep-learning-theory": {
+      "label": "Deep Learning Theory",
+      "color": "violet",
+      "kind": "field"
+    },
+    "sample-correlation-matrix": {
+      "label": "Sample Correlation Matrix",
+      "color": "lime",
+      "kind": "direction"
+    },
+    "dynamical-systems": {
+      "label": "Dynamical Systems",
+      "color": "gold",
+      "kind": "field"
+    },
+    "learning-from-human-feedback": {
+      "label": "Learning from Human Feedback",
+      "color": "teal",
+      "kind": "direction"
+    },
+    "anticoncentration": {
+      "label": "Anticoncentration",
+      "color": "plum",
+      "kind": "direction"
+    },
+    "haar-gaussian-comparison": {
+      "label": "Haar–Gaussian Comparison",
+      "color": "sky",
+      "kind": "direction"
+    }
+  }
+}

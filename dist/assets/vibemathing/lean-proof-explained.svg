@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title description">
+  <title id="title">A proof in Lean</title>
+  <desc id="description">An annotated Lean proof of transitivity. The colon means has type. Nat is the type of natural numbers, 0, 1, 2, and so on; a, b, and c have this type. The identifiers hab and hbc are hypothesis or proof names: they name proofs of a equals b and b equals c, respectively. The goal is a equals c. The keyword by starts the proof, which applies Eq.trans. The complete example has been checked in Lean.</desc>
+  <style>
+    .sans { font-family: Arial, Helvetica, sans-serif; }
+    .code-line { font-family: Menlo, 'DejaVu Sans Mono', monospace; font-size: 38px; fill: #edf2f7; }
+    .label { font-family: Arial, Helvetica, sans-serif; font-size: 23px; font-weight: 700; letter-spacing: 2px; }
+    .note { font-family: Arial, Helvetica, sans-serif; font-size: 32px; fill: #e9eff7; }
+  </style>
+  <rect width="1600" height="1000" fill="#0f1c2d"/>
+  <text class="sans" x="84" y="78" fill="#62d6d9" font-size="23" font-weight="700" letter-spacing="2.6">POST 03 · FORMAL VERIFICATION</text>
+  <text class="sans" x="80" y="164" fill="#f5f2eb" font-size="72" font-weight="700">A proof in Lean</text>
+  <text class="sans" x="84" y="219" fill="#adbed1" font-size="33">If a = b and b = c, then a = c.</text>
+
+  <rect x="74" y="267" width="1452" height="587" rx="22" fill="#15263b" stroke="#32485f" stroke-width="2"/>
+  <rect x="106" y="384" width="700" height="54" rx="9" fill="#1c314f"/>
+  <rect x="106" y="456" width="700" height="140" rx="10" fill="#17394a"/>
+  <rect x="106" y="611" width="700" height="54" rx="9" fill="#3a3540"/>
+  <rect x="106" y="687" width="700" height="55" rx="9" fill="#2c2e4b"/>
+
+  <g aria-label="Complete Lean proof">
+    <text class="code-line" x="122" y="351" xml:space="preserve"><tspan fill="#bbaafa">theorem</tspan> equality_chain</text>
+    <text class="code-line" x="122" y="423" xml:space="preserve">    (a b c : <tspan fill="#94bcff">Nat</tspan>)</text>
+    <text class="code-line" x="122" y="495" xml:space="preserve">    (<tspan fill="#62dedd">hab : a = b</tspan>)</text>
+    <text class="code-line" x="122" y="567" xml:space="preserve">    (<tspan fill="#62dedd">hbc : b = c</tspan>) :</text>
+    <text class="code-line" x="122" y="639" xml:space="preserve">    <tspan fill="#f3cc7a">a = c</tspan> := <tspan fill="#bbaafa">by</tspan></text>
+    <text class="code-line" x="122" y="715" xml:space="preserve">  <tspan fill="#bbaafa">exact Eq.trans hab hbc</tspan></text>
+  </g>
+
+  <path d="M826 423 H1018" fill="none" stroke="#94bcff" stroke-width="3"/>
+  <circle cx="1018" cy="423" r="5" fill="#94bcff"/>
+  <text class="label" x="1050" y="311" fill="#94bcff">TYPE</text>
+  <text class="note" x="1050" y="350">: means “has type”.</text>
+  <text class="note" x="1050" y="389">a, b, c have type Nat:</text>
+  <text class="note" x="1050" y="428">natural numbers 0, 1, 2, …</text>
+
+  <path d="M826 473 H842 V580 H826 M842 527 H1018" fill="none" stroke="#62dedd" stroke-width="3"/>
+  <circle cx="1018" cy="527" r="5" fill="#62dedd"/>
+  <text class="label" x="1050" y="485" fill="#62dedd">HYPOTHESIS / PROOF NAMES</text>
+  <text class="note" x="1050" y="531">hab names a proof of a = b.</text>
+  <text class="note" x="1050" y="570">hbc names a proof of b = c.</text>
+
+  <path d="M826 639 H1018" fill="none" stroke="#f3cc7a" stroke-width="3"/>
+  <circle cx="1018" cy="639" r="5" fill="#f3cc7a"/>
+  <text class="label" x="1050" y="619" fill="#f3cc7a">GOAL AND PROOF START</text>
+  <text class="note" x="1050" y="655">Prove a = c.</text>
+  <text class="note" x="1050" y="694"><tspan fill="#bbaafa">by</tspan> starts the proof.</text>
+
+  <path d="M826 715 H1018" fill="none" stroke="#bbaafa" stroke-width="3"/>
+  <circle cx="1018" cy="715" r="5" fill="#bbaafa"/>
+  <text class="label" x="1050" y="744" fill="#bbaafa">PROOF STEP</text>
+  <text class="note" x="1050" y="784">Apply transitivity</text>
+  <text class="note" x="1050" y="823">of equality.</text>
+
+  <rect x="84" y="896" width="318" height="58" rx="29" fill="#153e3c" stroke="#438d7c" stroke-width="1.5"/>
+  <path d="M109 925 l9 9 19 -22" fill="none" stroke="#84e3ba" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="sans" x="151" y="935" fill="#a1efcb" font-size="28" font-weight="700">Lean-checked</text>
+  <text class="sans" x="447" y="935" fill="#adbed1" font-size="28">The conclusion follows from the stated hypotheses.</text>
+</svg>
