@@ -115,8 +115,6 @@ page('Blog','blog/',f'<div class="page-heading"><h1>Blog</h1><p>Research notes, 
 def paper_item(p, heading_level=3):
     authors = E(p['authors']).replace('Hongru Zhao','<span class="author-me">Hongru Zhao</span>')
     title = E(p['title'])
-    if p['url']:
-        title = f'<a href="{E(p["url"])}">{title}</a>'
     paperlink = f'<a class="paper-link" href="{E(p["url"])}">{E(p.get("link_label", "Paper"))} <span aria-hidden="true">↗</span></a>' if p['url'] else ''
     leanlink = f'<a class="paper-link lean-link" href="{E(p["lean_url"])}" title="{E(p.get("lean_scope", "Lean proof repository"))}">Lean verified <span aria-hidden="true">↗</span></a>' if p.get('lean_url') else ''
     links = f'<div class="publication-links">{paperlink}{leanlink}</div>' if paperlink or leanlink else ''
