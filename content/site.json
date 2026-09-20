@@ -22,7 +22,7 @@
       "authors": "Hongru Zhao",
       "year": 2026,
       "venue": "Preprint",
-      "url": "",
+      "url": "https://zenodo.org/records/22856033",
       "topics": [
         "Quantum Information Science"
       ],
@@ -157,7 +157,8 @@
       "title": "Optimal and Adaptive Design for Quantum Tomography",
       "authors": "Hongru Zhao and R. Oliver VandenBerg",
       "year": 2026,
-      "venue": "Preprint",
+      "venue": "Coming soon",
+      "hidden": true,
       "url": "",
       "topics": [
         "Quantum Information Science",
@@ -208,10 +209,10 @@
       "authors": "Hongru Zhao",
       "year": 2025,
       "venue": "Preprint",
-      "url": "",
+      "url": "https://github.com/HongruZhao/btd-soft-ranking",
+      "link_label": "GitHub",
       "topics": [
-        "Statistical inference and experimental design",
-        "Generative AI and reinforcement learning"
+        "Statistical inference and experimental design"
       ],
       "preprint": true,
       "tags": [

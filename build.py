@@ -8,6 +8,7 @@ from math_markdown import MathJaxExtension
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'dist'
 DATA = json.loads((ROOT / 'content/site.json').read_text())
+VISIBLE_PAPERS = [p for p in DATA['papers'] if not p.get('hidden', False)]
 TOPIC_LABELS = DATA.get('topic_labels', {})
 E = html.escape
 SITE_URL = 'https://hongruzhao.github.io'
@@ -116,7 +117,7 @@ def paper_item(p, heading_level=3):
     title = E(p['title'])
     if p['url']:
         title = f'<a href="{E(p["url"])}">{title}</a>'
-    paperlink = f'<a class="paper-link" href="{E(p["url"])}">Paper <span aria-hidden="true">↗</span></a>' if p['url'] else ''
+    paperlink = f'<a class="paper-link" href="{E(p["url"])}">{E(p.get("link_label", "Paper"))} <span aria-hidden="true">↗</span></a>' if p['url'] else ''
     tags = []
     for tag_id in p['tags']:
         tag = DATA['paper_tag_definitions'][tag_id]
@@ -126,7 +127,7 @@ def paper_item(p, heading_level=3):
 
 pubs='<div class="page-heading"><h1>Publications</h1><p><a href="../topics/">Explore Research by Topic</a></p></div>'
 published = sorted(
-    [p for p in DATA['papers'] if not p['preprint']
+    [p for p in VISIBLE_PAPERS if not p['preprint']
      and (p.get('include_in_publications', False)
           or not re.search(r'\b(forthcoming|accepted|in press|preprint)\b', p['venue'], re.I))],
     key=lambda p: p['year'], reverse=True)
@@ -150,7 +151,7 @@ for area_id, label, area_topics in research_areas:
     if len(area_topics) > 1:
         topics += '<nav class="topic-jump" aria-label="Topics in this research area">' + ''.join(f'<a href="#{slug(t)}" data-topic-color="{E(DATA["topic_colors"][t])}">{E(TOPIC_LABELS.get(t, t))}</a>' for t in area_topics) + '</nav>'
     for topic in area_topics:
-        papers = [p for p in DATA['papers'] if topic in p['topics']
+        papers = [p for p in VISIBLE_PAPERS if topic in p['topics']
                   and (area_id == 'statistics-for-science' or 'Quantum Information Science' not in p['topics'])]
         aliases = ''.join(f'<span class="topic-alias" id="{E(anchor)}" aria-hidden="true"></span>' for anchor in DATA.get('topic_aliases', {}).get(topic, []))
         topics += f'<section class="topic-section" id="{slug(topic)}" data-topic-color="{E(DATA["topic_colors"][topic])}">{aliases}<h2>{E(TOPIC_LABELS.get(topic, topic))}</h2>'
@@ -159,9 +160,10 @@ for area_id, label, area_topics in research_areas:
             topics += '<nav class="topic-jump quantum-jump" aria-label="Quantum research subgroups">' + ''.join(f'<a href="#{g["id"]}" data-topic-color="{E(g["color"])}">{E(g["title"])}</a>' for g in groups) + '</nav>'
             for group in groups:
                 topics += f'<section class="quantum-subgroup" id="{group["id"]}" data-topic-color="{E(group["color"])}"><h3>{E(group["title"])}</h3>'
-                topics += ''.join(paper_item(p, 4).replace(f'id="{p["id"]}"', '') for p in papers if p['id'] in group['paper_ids']) + '</section>'
+                group_content = ''.join(paper_item(p, 4) for p in papers if p['id'] in group['paper_ids'])
+                topics += (group_content or '<p>Coming soon.</p>') + '</section>'
         else:
-            topics += ''.join(paper_item(p).replace(f'id="{p["id"]}"', '') for p in papers)
+            topics += ''.join(paper_item(p) for p in papers)
         topics += '</section>'
     topics += '</section>'
 page('Research by Topic','research/topics/',topics,classes='research-page')
