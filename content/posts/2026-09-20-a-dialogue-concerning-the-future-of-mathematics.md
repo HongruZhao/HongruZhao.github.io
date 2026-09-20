@@ -4,6 +4,11 @@ date: 2026-09-20
 sequence: 5
 category: Philosophical Dialogue
 description: "On Proof, Understanding, and Artificial Intelligence"
+image: assets/vibemathing/dialogue-three-evenings.png
+image_width: 1586
+image_height: 992
+image_alt: "Three philosophers discuss two geometric manuscripts at a table overlooking a coastal city at dusk."
+caption: "An imagined conversation on proof, understanding, and the future of mathematics."
 author: "ChatGPT 6 Pro · Prompt by Hongru Zhao"
 draft: false
 ---
