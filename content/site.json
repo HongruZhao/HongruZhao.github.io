@@ -30,8 +30,9 @@
       ],
       "preprint": true,
       "tags": [
-        "statistical-decision-theory",
-        "quantum-tomography"
+        "minimax-theory",
+        "quantum-tomography",
+        "clifford-measurements"
       ]
     },
     {
@@ -594,6 +595,16 @@
       "label": "Quantum Tomography",
       "color": "indigo",
       "kind": "direction"
+    },
+    "clifford-measurements": {
+      "label": "Clifford Measurements",
+      "color": "cyan",
+      "kind": "direction"
+    },
+    "minimax-theory": {
+      "label": "Minimax Theory",
+      "color": "slate",
+      "kind": "field"
     },
     "experimental-design": {
       "label": "Experimental Design",
