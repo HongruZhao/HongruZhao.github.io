@@ -17,6 +17,24 @@
   ],
   "papers": [
     {
+      "id": "minimax-quantum-tomography",
+      "title": "Minimax Quantum State Tomography with Periodic Clifford Measurements",
+      "authors": "Hongru Zhao",
+      "year": 2026,
+      "venue": "Preprint",
+      "url": "",
+      "lean_url": "https://github.com/HongruZhao/MinimaxQuantumStateTomography",
+      "lean_scope": "Lean verification of Theorem 3 and Corollary 4 under the stated measurement, domain, and fitting hypotheses.",
+      "topics": [
+        "Quantum Information Science"
+      ],
+      "preprint": true,
+      "tags": [
+        "statistical-decision-theory",
+        "quantum-tomography"
+      ]
+    },
+    {
       "id": "local-anticoncentration",
       "title": "Local Anticoncentration for Gaussian Boson Sampling via Conditional Wishart Geometry",
       "authors": "Hongru Zhao",
@@ -484,6 +502,7 @@
       "id": "quantum-information-theory",
       "title": "Quantum Information & Algorithms",
       "paper_ids": [
+        "minimax-quantum-tomography",
         "weak-typicality"
       ],
       "color": "violet"
