@@ -169,20 +169,6 @@ This reminded me of the Chinese novel **《学霸的黑科技系统》**, often 
 
 There is a joke almost too good to resist: even a novelist giving the hero extraordinary assistance allowed a week, while a real laboratory now reports 88 hours. The comparison is playful—the tasks, prior work, and resources differ—but it captures how quickly the timescale has become difficult to imagine.
 
-## Recent updates
-
-*A running record of new announcements and released results.*
-
-### September 21, 2026 — OpenAI reports solving more than 100 additional open problems
-
-OpenAI says the internal model behind its Navier–Stokes announcement has now resolved **more than 100 additional, long-standing open problems across most areas of mathematics**. The company dates the start of training to **August 28**. The scale of this claim extends the story from a sequence of individual breakthroughs to a broad wave of results across different fields. ([OpenAI’s September 21 announcement](https://openai.com/index/advisory-group-on-mathematics-and-ai/).)
-
-**This is an announcement of results awaiting fuller public presentation.** The announcement does not enumerate the problems or provide the statements and proofs for the full collection. It therefore does not yet let a reader assess the claimed solutions individually, their assumptions, or the extent of their formal verification. Those details will matter as the work is released. ([Announcement](https://openai.com/index/advisory-group-on-mathematics-and-ai/).)
-
-The accompanying institutional development is also significant. An independent **Advisory Group on Mathematics and Artificial Intelligence**, hosted at the Institute for Advanced Study, includes **Timothy Gowers, Camillo De Lellis, Martin Hairer, Edward Witten**, and other mathematicians. The group identifies its immediate task as advising OpenAI on coordinating the release of the many results the company reports. Its members are unpaid for this work, plan to publish their recommendations, and emphasize that they have no decision-making authority at AI companies. ([The group’s statement and membership](https://agmai.org/).)
-
-For me, the striking feature is the combination of **breadth and pace**. If these reported solutions withstand scrutiny, researchers across many fields may face the same questions at once: which new arguments should we study first, which ideas connect different results, and how can this work become useful shared knowledge? The advisory group also gives a concrete setting for the disagreement discussed below: how to welcome discoveries while sustaining understanding, attribution, and the development of future researchers.
-
 ## A warning from 25 Fields medalists—and a different picture of participation
 
 On **September 11**, 25 Fields medalists published an opinion piece arguing that the goals of AI companies and the mathematical community are “severely misaligned.” They acknowledged the new capabilities while warning that a race to announce solutions can undermine understanding, attribution, and the development of students. Their concern was about the purpose of mathematics and the institutions supporting it. ([Joint opinion in Le Monde](https://www.lemonde.fr/en/opinion/article/2026/09/11/25-fields-medalists-warn-the-goals-of-the-ai-companies-and-the-goals-of-the-mathematical-community-are-severely-misaligned_6757433_23.html).)
@@ -222,3 +208,19 @@ For me, preparation means choosing worthwhile questions, learning to work critic
 I do not mean that these activities are permanently beyond AI. Their value does not depend on a machine being unable to perform them. They matter because they are among the reasons we pursue theoretical work at all.
 
 The future I want is one in which a result arriving overnight gives us more time to understand its ideas, ask a better next question, and bring someone else into the subject. That is the standard by which I would like to judge the era of vibemathing.
+
+---
+
+## Recent updates
+
+*A running record of new announcements and released results.*
+
+### September 21, 2026 — OpenAI reports solving more than 100 additional open problems
+
+OpenAI says the internal model behind its Navier–Stokes announcement has now resolved **more than 100 additional, long-standing open problems across most areas of mathematics**. The company dates the start of training to **August 28**. The scale of this claim extends the story from a sequence of individual breakthroughs to a broad wave of results across different fields. ([OpenAI’s September 21 announcement](https://openai.com/index/advisory-group-on-mathematics-and-ai/).)
+
+**This is an announcement of results awaiting fuller public presentation.** The announcement does not enumerate the problems or provide the statements and proofs for the full collection. It therefore does not yet let a reader assess the claimed solutions individually, their assumptions, or the extent of their formal verification. Those details will matter as the work is released. ([Announcement](https://openai.com/index/advisory-group-on-mathematics-and-ai/).)
+
+The accompanying institutional development is also significant. An independent **Advisory Group on Mathematics and Artificial Intelligence**, hosted at the Institute for Advanced Study, includes **Timothy Gowers, Camillo De Lellis, Martin Hairer, Edward Witten**, and other mathematicians. The group identifies its immediate task as advising OpenAI on coordinating the release of the many results the company reports. Its members are unpaid for this work, plan to publish their recommendations, and emphasize that they have no decision-making authority at AI companies. ([The group’s statement and membership](https://agmai.org/).)
+
+For me, the striking feature is the combination of **breadth and pace**. If these reported solutions withstand scrutiny, researchers across many fields may face the same questions at once: which new arguments should we study first, which ideas connect different results, and how can this work become useful shared knowledge? The advisory group also gives a concrete setting for the disagreement discussed above: how to welcome discoveries while sustaining understanding, attribution, and the development of future researchers.
