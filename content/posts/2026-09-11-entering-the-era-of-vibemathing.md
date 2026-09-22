@@ -1,7 +1,7 @@
 ---
 title: "Entering the Era of Vibemathing"
 date: 2026-09-11
-updated: 2026-09-20
+updated: 2026-09-22
 sequence: 1
 category: Theoretical Research and AI
 description: "From the lowest-hanging Erdős problems to research at machine speed—and the question of what theoretical researchers should value next."
@@ -168,6 +168,20 @@ The mathematical scope matters: the announced construction has an initially smoo
 This reminded me of the Chinese novel **《学霸的黑科技系统》**, often translated as *Scholar’s Advanced Technological System*, by **晨星LL**. In Chapter 417, *“Answering a Millennium Problem!”*, Lu Zhou is already close to the end of his Navier–Stokes work when he sets a **168-hour countdown** for the final push. ([Chapter 417](https://book.shencou.com/novel/74/122188.html).)
 
 There is a joke almost too good to resist: even a novelist giving the hero extraordinary assistance allowed a week, while a real laboratory now reports 88 hours. The comparison is playful—the tasks, prior work, and resources differ—but it captures how quickly the timescale has become difficult to imagine.
+
+## Recent updates
+
+*A running record of new announcements and released results.*
+
+### September 21, 2026 — OpenAI reports solving more than 100 additional open problems
+
+OpenAI says the internal model behind its Navier–Stokes announcement has now resolved **more than 100 additional, long-standing open problems across most areas of mathematics**. The company dates the start of training to **August 28**. The scale of this claim extends the story from a sequence of individual breakthroughs to a broad wave of results across different fields. ([OpenAI’s September 21 announcement](https://openai.com/index/advisory-group-on-mathematics-and-ai/).)
+
+**This is an announcement of results awaiting fuller public presentation.** The announcement does not enumerate the problems or provide the statements and proofs for the full collection. It therefore does not yet let a reader assess the claimed solutions individually, their assumptions, or the extent of their formal verification. Those details will matter as the work is released. ([Announcement](https://openai.com/index/advisory-group-on-mathematics-and-ai/).)
+
+The accompanying institutional development is also significant. An independent **Advisory Group on Mathematics and Artificial Intelligence**, hosted at the Institute for Advanced Study, includes **Timothy Gowers, Camillo De Lellis, Martin Hairer, Edward Witten**, and other mathematicians. The group identifies its immediate task as advising OpenAI on coordinating the release of the many results the company reports. Its members are unpaid for this work, plan to publish their recommendations, and emphasize that they have no decision-making authority at AI companies. ([The group’s statement and membership](https://agmai.org/).)
+
+For me, the striking feature is the combination of **breadth and pace**. If these reported solutions withstand scrutiny, researchers across many fields may face the same questions at once: which new arguments should we study first, which ideas connect different results, and how can this work become useful shared knowledge? The advisory group also gives a concrete setting for the disagreement discussed below: how to welcome discoveries while sustaining understanding, attribution, and the development of future researchers.
 
 ## A warning from 25 Fields medalists—and a different picture of participation
 
