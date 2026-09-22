@@ -22,7 +22,7 @@
       "authors": "Hongru Zhao",
       "year": 2026,
       "venue": "Preprint",
-      "url": "",
+      "url": "https://zenodo.org/records/22906023",
       "lean_url": "https://github.com/HongruZhao/MinimaxQuantumStateTomography",
       "lean_scope": "Lean verification of Theorem 3 and Corollary 4 under the stated measurement, domain, and fitting hypotheses.",
       "topics": [
