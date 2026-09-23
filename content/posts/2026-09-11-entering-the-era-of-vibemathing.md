@@ -5,10 +5,10 @@ updated: 2026-09-22
 sequence: 1
 category: Theoretical Research and AI
 description: "From the lowest-hanging Erdős problems to research at machine speed—and the question of what theoretical researchers should value next."
-image: assets/vibemathing/low-hanging-fruit.png
+image: assets/vibemathing/ai-picks-low-fruit.png
 image_width: 1536
 image_height: 1024
-image_alt: "A flying machine labeled AI plucks fruit high in a tree while a person on the ground calls it low hanging fruit."
+image_alt: "A grounded robotic arm gently picks an apple from a low branch of a fruit tree."
 caption: "“Low hanging” depends on who can reach it."
 draft: true
 publish: true
