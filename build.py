@@ -156,12 +156,17 @@ for area_id, label, area_topics in research_areas:
         aliases = ''.join(f'<span class="topic-alias" id="{E(anchor)}" aria-hidden="true"></span>' for anchor in DATA.get('topic_aliases', {}).get(topic, []))
         topics += f'<section class="topic-section" id="{slug(topic)}" data-topic-color="{E(DATA["topic_colors"][topic])}">{aliases}<h2>{E(TOPIC_LABELS.get(topic, topic))}</h2>'
         if topic == 'Quantum Information Science':
-            groups = DATA['quantum_subgroups']
+            # Keep empty subgroups in site.json; publish them when they have a visible paper.
+            groups = [g for g in DATA['quantum_subgroups']
+                      if any(p['id'] in g['paper_ids'] for p in papers)]
+            active_group_ids = {g['id'] for g in groups}
             topics += '<nav class="topic-jump quantum-jump" aria-label="Quantum research subgroups">' + ''.join(f'<a href="#{g["id"]}" data-topic-color="{E(g["color"])}">{E(g["title"])}</a>' for g in groups) + '</nav>'
             for group in groups:
-                topics += f'<section class="quantum-subgroup" id="{group["id"]}" data-topic-color="{E(group["color"])}"><h3>{E(group["title"])}</h3>'
+                fallback_anchors = ''.join(f'<span class="topic-alias" id="{E(anchor)}" aria-hidden="true"></span>'
+                                           for anchor in group.get('fallback_anchor_ids', []) if anchor not in active_group_ids)
+                topics += f'<section class="quantum-subgroup" id="{group["id"]}" data-topic-color="{E(group["color"])}">{fallback_anchors}<h3>{E(group["title"])}</h3>'
                 group_content = ''.join(paper_item(p, 4) for p in papers if p['id'] in group['paper_ids'])
-                topics += (group_content or '<p>Coming soon.</p>') + '</section>'
+                topics += group_content + '</section>'
         else:
             topics += ''.join(paper_item(p) for p in papers)
         topics += '</section>'

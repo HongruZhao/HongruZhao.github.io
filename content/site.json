@@ -506,6 +506,9 @@
         "minimax-quantum-tomography",
         "weak-typicality"
       ],
+      "fallback_anchor_ids": [
+        "quantum-tomography"
+      ],
       "color": "violet"
     },
     {
