@@ -141,7 +141,7 @@ research_areas = [
      [t for t in DATA['topics'] if t not in ['Quantum Information Science', 'Astrostatistics', 'Other applications']]),
     ('statistics-for-science', 'Statistics for Science', ['Quantum Information Science', 'Astrostatistics', 'Other applications'])
 ]
-topics = '<div class="page-heading"><h1>Research by Topic</h1></div>'
+topics = '<div class="page-heading"><h1>Research by Topic</h1><p><a href="../publications/">Explore Publications</a></p></div>'
 topics += '<nav class="research-areas" aria-label="Research areas">'
 for area_id, label, area_topics in research_areas:
     topics += f'<a class="research-area-choice" id="choose-{area_id}" href="#{area_id}" data-research-area="{area_id}"><span>{E(label)}</span></a>'
