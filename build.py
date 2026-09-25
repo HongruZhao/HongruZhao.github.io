@@ -123,7 +123,8 @@ def paper_item(p, heading_level=3):
     for tag_id in p['tags']:
         tag = DATA['paper_tag_definitions'][tag_id]
         tags.append(f'<span class="paper-tag" data-tag-kind="{E(tag["kind"])}" data-topic-color="{E(tag["color"])}">{E(tag["label"])}</span>')
-    metadata = f'<div class="publication-details"><span class="publication-venue">{E(p["venue"])} · {p["year"]}</span>{"".join(tags)}</div>'
+    note = f' ({E(p["publication_note"])})' if p.get('publication_note') else ''
+    metadata = f'<div class="publication-details"><span class="publication-venue">{E(p["venue"])} · {p["year"]}{note}</span>{"".join(tags)}</div>'
     return f'<article class="publication" id="{p["id"]}"><h{heading_level}>{title}</h{heading_level}><p class="authors">{authors}</p><div class="publication-meta">{metadata}{links}</div></article>'
 
 pubs='<div class="page-heading"><h1>Publications</h1><p>Published and accepted papers. Manuscripts and preprints appear under <a href="../topics/">Research by Topic</a>.</p></div>'
