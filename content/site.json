@@ -77,7 +77,7 @@
     },
     {
       "id": "uniform-hiding",
-      "title": "Uniform Hiding of Haar Block Transpose Gram Matrices",
+      "title": "Uniform Hiding and Two Routes to Relative Accuracy in Gaussian Boson Sampling",
       "authors": "Hongru Zhao",
       "year": 2026,
       "venue": "Preprint",
@@ -119,6 +119,8 @@
       "year": 2026,
       "venue": "Preprint",
       "url": "https://arxiv.org/abs/2608.17065",
+      "lean_url": "https://zenodo.org/records/21959946",
+      "lean_scope": "Lean 4 formalization of the Gaussian surrogate moments and threshold results; not finite-dimensional Haar transfer or quantum advantage.",
       "topics": [
         "Quantum Information Science"
       ],
@@ -204,6 +206,7 @@
       "year": 2026,
       "venue": "Preprint",
       "url": "https://arxiv.org/abs/2608.18441",
+      "code_url": "https://github.com/HongruZhao/Guaasian_Self_Concordant",
       "topics": [
         "High-dimensional statistics"
       ],
@@ -251,9 +254,10 @@
       "id": "paper-3",
       "title": "Subspace Decompositions for Association Structure Learning in Multivariate Categorical Response Regression",
       "authors": "Hongru Zhao, Aaron J. Molstad and Adam J. Rothman",
-      "year": 2025,
+      "year": 2026,
       "venue": "Preprint",
       "url": "https://arxiv.org/abs/2410.04356",
+      "code_url": "https://github.com/HongruZhao/multivariate_categorical_response_regression",
       "topics": [
         "High-dimensional statistics"
       ],
@@ -270,6 +274,7 @@
       "year": 2025,
       "venue": "IEEE Transactions on Information Theory",
       "url": "https://ieeexplore.ieee.org/document/10926541",
+      "code_url": "https://github.com/HongruZhao/codeActiveSeqEstimation",
       "topics": [
         "Statistical inference and experimental design"
       ],
@@ -304,6 +309,7 @@
       "year": 2024,
       "venue": "Transactions on Machine Learning Research",
       "url": "https://openreview.net/forum?id=jG7ndW7UHp",
+      "code_url": "https://github.com/HongruZhao/deep_linear_network",
       "topics": [
         "Generative AI and reinforcement learning"
       ],
@@ -430,17 +436,17 @@
     {
       "term": "Fall 2026",
       "course": "STAT 4052: Statistical Machine Learning II",
-      "role": "Graduate Instructor"
+      "role": "Instructor"
     },
     {
       "term": "Spring 2026",
       "course": "STAT 4052: Statistical Machine Learning II",
-      "role": "Graduate Instructor"
+      "role": "Instructor"
     },
     {
       "term": "Fall 2025",
       "course": "STAT 4102: Theory of Statistics II",
-      "role": "Graduate Instructor"
+      "role": "Instructor"
     },
     {
       "term": "Spring 2025",

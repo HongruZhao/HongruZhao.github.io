@@ -117,7 +117,8 @@ def paper_item(p, heading_level=3):
     title = E(p['title'])
     paperlink = f'<a class="paper-link" href="{E(p["url"])}">{E(p.get("link_label", "Paper"))} <span aria-hidden="true">↗</span></a>' if p['url'] else ''
     leanlink = f'<a class="paper-link lean-link" href="{E(p["lean_url"])}" title="{E(p.get("lean_scope", "Lean proof repository"))}">Lean verified <span aria-hidden="true">↗</span></a>' if p.get('lean_url') else ''
-    links = f'<div class="publication-links">{paperlink}{leanlink}</div>' if paperlink or leanlink else ''
+    codelink = f'<a class="paper-link" href="{E(p["code_url"])}">GitHub <span aria-hidden="true">↗</span></a>' if p.get('code_url') else ''
+    links = f'<div class="publication-links">{paperlink}{leanlink}{codelink}</div>' if paperlink or leanlink or codelink else ''
     tags = []
     for tag_id in p['tags']:
         tag = DATA['paper_tag_definitions'][tag_id]
@@ -125,7 +126,7 @@ def paper_item(p, heading_level=3):
     metadata = f'<div class="publication-details"><span class="publication-venue">{E(p["venue"])} · {p["year"]}</span>{"".join(tags)}</div>'
     return f'<article class="publication" id="{p["id"]}"><h{heading_level}>{title}</h{heading_level}><p class="authors">{authors}</p><div class="publication-meta">{metadata}{links}</div></article>'
 
-pubs='<div class="page-heading"><h1>Publications</h1><p><a href="../topics/">Explore Research by Topic</a></p></div>'
+pubs='<div class="page-heading"><h1>Publications</h1><p>Published and accepted papers. Manuscripts and preprints appear under <a href="../topics/">Research by Topic</a>.</p></div>'
 published = sorted(
     [p for p in VISIBLE_PAPERS if not p['preprint']
      and (p.get('include_in_publications', False)
