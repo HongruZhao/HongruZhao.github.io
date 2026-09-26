@@ -102,6 +102,8 @@
       "year": 2026,
       "venue": "Preprint",
       "url": "https://arxiv.org/abs/2608.17274",
+      "lean_url": "https://zenodo.org/records/21969265",
+      "lean_scope": "Lean 4 verification of weak typicality and related entropy results, conditional on three stated external mathematical inputs in the ideal lossless, noiseless Gaussian boson sampling model.",
       "topics": [
         "Quantum Information Science"
       ],
