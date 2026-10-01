@@ -254,16 +254,17 @@
     },
     {
       "id": "paper-3",
-      "title": "Subspace Decompositions for Association Structure Learning in Multivariate Categorical Response Regression",
+      "title": "Subspace Decompositions for Association Structure Learning in Multivariate Categorical Data Analysis",
       "authors": "Hongru Zhao, Aaron J. Molstad and Adam J. Rothman",
       "year": 2026,
-      "venue": "Preprint",
+      "venue": "Electronic Journal of Statistics",
+      "publication_note": "Accepted",
       "url": "https://arxiv.org/abs/2410.04356",
       "code_url": "https://github.com/HongruZhao/multivariate_categorical_response_regression",
       "topics": [
         "High-dimensional statistics"
       ],
-      "preprint": true,
+      "preprint": false,
       "tags": [
         "high-dimensional-statistics",
         "structure-learning"
