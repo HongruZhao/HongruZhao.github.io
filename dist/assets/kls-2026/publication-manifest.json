@@ -1,0 +1,140 @@
+{
+  "article": "https://hongruzhao.github.io/blog/2026-10-08-kls-conjecture-lean-formalization/",
+  "publication_date": "2026-10-08",
+  "evidence_copy_note": "Published evidence copies omit private chat identifiers and machine-local filesystem prefixes. Local-only report links are converted to attached public files or plain source identifiers. Reviewed prose, mathematical statements, exact selected quotations, prompt Markdown, Lean source, and figures are preserved.",
+  "files": [
+    {
+      "path": "assets/kls-geometry.png",
+      "source_sha256": "ac79b751b7095f9c7b991adf2f933dde4bbe4c3a291c3dc006d482f4a3cb6547",
+      "published_sha256": "ac79b751b7095f9c7b991adf2f933dde4bbe4c3a291c3dc006d482f4a3cb6547",
+      "bytes": 1808918,
+      "source_unchanged": true
+    },
+    {
+      "path": "assets/kls-citation-map.png",
+      "source_sha256": "322a7269ef257687706b028a645409cd5aae8e44431674ff7aad8c8e6a3b43ab",
+      "published_sha256": "322a7269ef257687706b028a645409cd5aae8e44431674ff7aad8c8e6a3b43ab",
+      "bytes": 185117,
+      "source_unchanged": true
+    },
+    {
+      "path": "attachments/KLS_Lean_Astra_Ultra_Prompt.md",
+      "source_sha256": "7b6ea90424105b1d2d7d527aea8c4420790c25fad50c963e73cdb1c6f96b2297",
+      "published_sha256": "7b6ea90424105b1d2d7d527aea8c4420790c25fad50c963e73cdb1c6f96b2297",
+      "bytes": 16048,
+      "source_unchanged": true
+    },
+    {
+      "path": "attachments/KLS_Lean_Target_Search.md",
+      "source_sha256": "b29a35027ac557e05ce2a5ed81fe39a36673593f92133e30e20d4972be9eaad2",
+      "published_sha256": "b29a35027ac557e05ce2a5ed81fe39a36673593f92133e30e20d4972be9eaad2",
+      "bytes": 6219,
+      "source_unchanged": true
+    },
+    {
+      "path": "evidence/session-timeline.json",
+      "source_sha256": "b29611d253e06c964a54fa8cfb7f1b14478c10c710eb186805c10ec43899f242",
+      "published_sha256": "eab740b46c9976ddbf03fd29a75661f31ac6488ebc643cf45d8b6ed584b471ee",
+      "bytes": 23222,
+      "source_unchanged": false
+    },
+    {
+      "path": "evidence/prompt-preparation-history.json",
+      "source_sha256": "30cd18e2e5ead1891bb6e390fb2dd5eb02d207647f9703b22decf3f238fbfd04",
+      "published_sha256": "31f91451a831783e6f46bbc0ab055e8f3e707e56e02513610e9ea0f80e6ffedd",
+      "bytes": 6176,
+      "source_unchanged": false
+    },
+    {
+      "path": "attachments/selected-follow-up-prompts.md",
+      "source_sha256": "ee29481548ac19b97f59fb51e0fcd7525cf1811b23775d2e0807e8ba78ba1135",
+      "published_sha256": "ee29481548ac19b97f59fb51e0fcd7525cf1811b23775d2e0807e8ba78ba1135",
+      "bytes": 1100,
+      "source_unchanged": true
+    },
+    {
+      "path": "attachments/technical-report.md",
+      "source_sha256": "74d65a7bcc3f3231cee15a02205ca01856a1b34e59332da1be1f5237d3c841c9",
+      "published_sha256": "15615604da0503ebd6dc5d0eb0979981897ce10b4a1670611854501bf824bdf5",
+      "bytes": 8799,
+      "source_unchanged": false
+    },
+    {
+      "path": "attachments/Entropy197500FullVerification.lean",
+      "source_sha256": "81c39fa56e7e918934e2ed9ac803bd2c4b01d7ba45d931eb175bd163612c9388",
+      "published_sha256": "81c39fa56e7e918934e2ed9ac803bd2c4b01d7ba45d931eb175bd163612c9388",
+      "bytes": 2337,
+      "source_unchanged": true
+    },
+    {
+      "path": "attachments/checkpoint-verification.md",
+      "source_sha256": "7aa89c8180da15b6777b54e40d6966e88b416b9b6ba4f486c17a0b9c558f489d",
+      "published_sha256": "c9f6b264a41cc2179796f3414d8ef23c168af68d44780e669b72e469e95af8ad",
+      "bytes": 6630,
+      "source_unchanged": false
+    },
+    {
+      "path": "evidence/cheeger-197-c500-receipt.json",
+      "source_sha256": "b9dbc476960c2093b088faa983d5be5e46e8a46df59738d9bdcb4f1301af2e89",
+      "published_sha256": "b9dbc476960c2093b088faa983d5be5e46e8a46df59738d9bdcb4f1301af2e89",
+      "bytes": 35792,
+      "source_unchanged": true
+    },
+    {
+      "path": "evidence/cheeger-197-c500-semantic-review.txt",
+      "source_sha256": "38c70de930915098e79884c4512278683946b6b776b5a9c3e4cbed7e6ac7fe30",
+      "published_sha256": "38c70de930915098e79884c4512278683946b6b776b5a9c3e4cbed7e6ac7fe30",
+      "bytes": 1495,
+      "source_unchanged": true
+    },
+    {
+      "path": "evidence/source-statistics.json",
+      "source_sha256": "91d01b46b111448c792a60e30e7c640aaaa48058f6580d3c7518faa6e2bdc65c",
+      "published_sha256": "91d01b46b111448c792a60e30e7c640aaaa48058f6580d3c7518faa6e2bdc65c",
+      "bytes": 557438,
+      "source_unchanged": true
+    },
+    {
+      "path": "evidence/source-statistics-recount.json",
+      "source_sha256": "a3997bc7c8a32fc0b4e62e023020d1c6dccece27e01b0794ae030b31dcfb42c4",
+      "published_sha256": "a3997bc7c8a32fc0b4e62e023020d1c6dccece27e01b0794ae030b31dcfb42c4",
+      "bytes": 1351,
+      "source_unchanged": true
+    },
+    {
+      "path": "evidence/usage-at-completion.json",
+      "source_sha256": "e859cfbb3b943009177f6d404b35acbdf725732780ff9b5c8907f106d9c9add6",
+      "published_sha256": "c4652164b79b1f20b85c34e503ebc73b07cafc03eccd0d1e6afc160bc5522917",
+      "bytes": 2078,
+      "source_unchanged": false
+    },
+    {
+      "path": "assets/kls-geometry.svg",
+      "source_sha256": "90f27f5e14fad518a44451cb9cd4ad66bc5e955053847ac0b37f906ca555c8e9",
+      "published_sha256": "90f27f5e14fad518a44451cb9cd4ad66bc5e955053847ac0b37f906ca555c8e9",
+      "bytes": 6858728,
+      "source_unchanged": true
+    },
+    {
+      "path": "assets/kls-citation-map.svg",
+      "source_sha256": "80a841ab7b4d162d706a9940cdc1cfde4dae0b0f8866918e9e1ec9143d37b90f",
+      "published_sha256": "80a841ab7b4d162d706a9940cdc1cfde4dae0b0f8866918e9e1ec9143d37b90f",
+      "bytes": 22685,
+      "source_unchanged": true
+    },
+    {
+      "path": "attachments/actual-six-endpoint-types.txt",
+      "source_sha256": "eb0af57a8d101a6374dbeae9b47bca3b8b4a8a89179b271a290eb45a12812f8e",
+      "published_sha256": "eb0af57a8d101a6374dbeae9b47bca3b8b4a8a89179b271a290eb45a12812f8e",
+      "bytes": 1038,
+      "source_unchanged": true
+    },
+    {
+      "path": "attachments/technical-report-500.md",
+      "source_sha256": "ea1bf81bcff65c5ad15756ebc41be843c00bcf12334005c06594ff8401d497f0",
+      "published_sha256": "0e8c3b89f5817550f8cd10ffd2fd417cdc9d9c3a7ebee3ada8148ae42a189844",
+      "bytes": 9771,
+      "source_unchanged": false
+    }
+  ]
+}

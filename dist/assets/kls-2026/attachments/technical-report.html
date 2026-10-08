@@ -1,0 +1,68 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KLS endpoint: Poincaré constant 500 and Cheeger coefficient 1.97 · Hongru Zhao</title><link rel="stylesheet" href="/assets/style.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]]}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script></head><body><main class="site-main article-page"><nav><a href="/blog/2026-10-08-kls-conjecture-lean-formalization/">← Back to article</a> · <a href="technical-report.md">Download Markdown</a></nav><article class="article-body"><h1 id="kls-endpoint-poincare-constant-500-and-cheeger-coefficient-197">KLS endpoint: Poincaré constant 500 and Cheeger coefficient 1.97</h1>
+<p>The final endpoint is independently accepted. The user-requested stopping threshold has been reached: the Cheeger conversion coefficient is <strong>1.97 &lt; 2</strong>, with our dimension-free Poincaré constant <strong>500</strong>.</p>
+<p>The achieved target is the dimension-free pair</p>
+<div class="math-display">$$
+\operatorname{Var}_\mu(f)\le500\int\|\nabla f\|^2\,d\mu,
+\qquad
+h(\mu)\ge\frac{100}{197\sqrt{500}}
+=\frac1{1.97\sqrt{500}}.
+$$</div>
+<p>The displayed finite-energy Poincaré theorem covers locally Lipschitz functions with finite energy; the exact OpenAI statement uses smooth compactly supported tests. Here 1.97 is the conversion coefficient, and <span class="math-inline">$h(\mu)$</span> is the original closed-neighborhood Cheeger constant. The coefficient is strictly below 2. The final Cheeger theorem applies to every original admissible isotropic log-concave law in every positive dimension, including nonsmooth densities and bounded or unbounded supports. Its conclusion has no extra smoothness, curvature, finite-iteration or scalar-profile hypothesis. Both original full Cheeger law formulations are covered. No optimal-constant claim is needed or made. This is the user-requested stopping point.</p>
+<h2 id="exact-lean-endpoints">Exact Lean endpoints</h2>
+<p>OpenAI's <a href="https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/KLS/Model.lean">Model at commit adc7f1241b42e322a6451854ab7e4b4c146bf78a</a> is preserved byte for byte, with SHA-256 <code>28cddbf3c493afd43b3f7aba78f670952ea0c38909665c86bff883849e7f8dbc</code>. Its genuine dimension-free statement places one positive constant before every dimension and density quantifier:</p>
+<pre><code class="language-lean">def KLSStatement : Prop :=
+  ∃ C : ℝ, 0 &lt; C ∧ ∀ n : ℕ, 1 ≤ n →
+    ∀ ρ : Space n → ℝ, IsLogConcaveDensity ρ → IsIsotropic (densityMeasure ρ) →
+      PoincareBound (densityMeasure ρ) C
+</code></pre>
+<p>The fixed witness is our proved constant 500. These are the independently accepted original endpoint types:</p>
+<pre><code class="language-lean">OAI.LeanBlast.KLS.poincareBound500 (n : ℕ) :
+  1 ≤ n →
+    ∀ (ρ : OAI.LeanBlast.KLS.Space n → ℝ),
+      OAI.LeanBlast.KLS.IsLogConcaveDensity ρ →
+        OAI.LeanBlast.KLS.IsIsotropic (OAI.LeanBlast.KLS.densityMeasure ρ) →
+          OAI.LeanBlast.KLS.PoincareBound (OAI.LeanBlast.KLS.densityMeasure ρ) 500
+
+OAI.LeanBlast.KLS.klsStatement500 : OAI.LeanBlast.KLS.KLSStatement
+
+OAI.LeanBlast.KLS.fullStatement500 : OAI.LeanBlast.KLS.FullStatement
+</code></pre>
+<p>The full original finite-energy endpoint also derives square-integrability and integrability of the squared gradient before asserting the real-integral inequality:</p>
+<pre><code class="language-lean">KLS.admissibleMeasure.real_poincare_coupledRankYoung {n : ℕ} (hn : 1 ≤ n) {μ : MeasureTheory.Measure (KLS.Space n)}
+  (hμ : KLS.admissibleMeasure μ) {f : KLS.Space n → ℝ} (hf : LocallyLipschitz f) (he : KLS.energy μ f &lt; ⊤) :
+  MeasureTheory.MemLp f 2 μ ∧
+    MeasureTheory.Integrable (fun x =&gt; ‖gradient f x‖ ^ 2) μ ∧
+      ∫ (x : KLS.Space n), f x ^ 2 ∂μ - (∫ (x : KLS.Space n), f x ∂μ) ^ 2 ≤
+        500 * ∫ (x : KLS.Space n), ‖gradient f x‖ ^ 2 ∂μ
+</code></pre>
+<p>These new Cheeger and stopping-threshold types were printed by the independent final audit:</p>
+<pre><code class="language-lean">KLS.entropyCheegerCoefficient_lt_two : 197 / 100 &lt; 2
+
+KLS.admissibleMeasure.cheeger_lower_entropy197_500 {n : ℕ} (hn : 1 ≤ n) {μ : MeasureTheory.Measure (KLS.Space n)}
+  (hμ : KLS.admissibleMeasure μ) : ENNReal.ofReal (100 / (197 * √500)) ≤ KLS.cheegerConstant μ
+
+KLS.fullCheegerVerification_entropy197_500 : KLS.FullCheegerVerification
+
+KLS.exactOpenAIKLSStatement_entropy197_500 : OAI.LeanBlast.KLS.KLSStatement
+
+KLS.klsConjecture_entropy197_500 : KLS.KLSConjecture
+</code></pre>
+<p>The <a href="/assets/kls-2026/attachments/Entropy197500FullVerification.lean">final source</a> also proves the single conjunction <code>KLS.dimensionFree500_and_cheeger197</code>, combining the explicit OpenAI Poincaré bound 500 for every density with the Cheeger bound for every original admissible measure. The <a href="/assets/kls-2026/attachments/actual-six-endpoint-types.txt">six literal endpoint types</a>, <a href="/assets/kls-2026/evidence/cheeger-197-c500-receipt.json">independent receipt</a>, and <a href="/assets/kls-2026/evidence/cheeger-197-c500-semantic-review.txt">semantic review</a> retain the complete statement and verification details.</p>
+<h2 id="how-the-coefficient-falls-below-2">How the coefficient falls below 2</h2>
+<p>The new argument uses actual finite powers of the weighted mass resolvent. It constructs every smooth representative and every auxiliary entropy resolvent, rather than assuming a smoothing estimate. The globally smooth degree 20 polynomial</p>
+<div class="math-display">$$
+\Psi(s)=\frac{87}{100}\sum_{i=0}^{10}(-1)^i\binom{3/4}{i}
+\left(\frac9{10}\right)^i s^{2i}
+$$</div>
+<p>obeys <span class="math-inline">$3/20\le\Psi\le87/100$</span>, <span class="math-inline">$|\Psi'|\le3$</span>, and <span class="math-inline">$\Psi(-\Psi'')\ge1$</span> on <span class="math-inline">$|s|\le1$</span>. An exact positive Bernstein-polynomial identity proves the curvature inequality in Lean; an independent exact-rational calculation also checks every coefficient and both derivatives. The scaled profile is <span class="math-inline">$B\Psi(s/B)$</span> on <span class="math-inline">$|s|\le B$</span>.</p>
+<p>The Kato gradient comparison, resolvent positivity and weighted Cauchy inequality give a mixed entropy recurrence with the exact clock equation <span class="math-inline">$a_{k+1}^2-a_ka_{k+1}=1$</span>. The actual iterate lag permits a relative-profile loss of at most 1.01. After the fixed prefix, clock growth is at least 1.98 per squared step. A proved finite integer selection, total time <span class="math-inline">$5C/4$</span> and a 51-step prefix give displacement coefficient <span class="math-inline">$279/200$</span> and spectral contraction at most <span class="math-inline">$29/100$</span>. Thus the variance gap is at least <span class="math-inline">$71/100$</span>, and</p>
+<div class="math-display">$$
+\frac{279/200}{71/100}=\frac{279}{142}&lt;\frac{197}{100}&lt;2.
+$$</div>
+<p>Compact tests supply all initial gradient and diffusion bounds; the zero-bound case is proved separately. The existing full-law approximation and centered-shell conversion then give the displayed Cheeger theorem with the original boundary definition. The exported generic full-law theorem explicitly assumes a uniform Poincaré constant for admissible smooth strongly convex approximants. Our proved full-class membership of 500 discharges that premise. This report makes no claim about replacing 500 by each nonsmooth law's individual optimal Poincaré constant.</p>
+<h2 id="correspondence-with-the-papers-and-proof-departures">Correspondence with the papers and proof departures</h2>
+<p>The dimension-free isotropic Poincaré conclusion agrees with <a href="https://arxiv.org/html/2610.05474v1">Bizeul–Klartag–Lehec v1, Theorem 1.1</a> and <a href="https://arxiv.org/html/2610.01447v2#S9.Thmtheorem1">Song–Zhang v2, Theorem 9.1</a>. The constant 500 is our certified sufficient witness; it is not presented as a numerical constant quoted from either paper.</p>
+<p>The proof is not a line-by-line formalization of both papers. The Poincaré proof follows the BKL cumulant, suspension and Taylor-criterion route, with the quadratic-variance-eight input corresponding to <a href="https://arxiv.org/html/2607.24164v1">Letwin v1, Theorem 1.2</a>, and additional proved quantitative estimates. Song–Zhang's separate repeated height-reduction proof is not independently reproduced. The nonisotropic covariance-scaled BKL conclusion is outside this endpoint.</p>
+<p>The analytic realization uses weak <span class="math-inline">$C^{1,1}$</span> moment maps, local weak-Hessian integrability, weak integration by parts and Itô identities, cutoff approximation and weighted Hilbert-space spectral theory where the paper arguments use classical smoothness or global growth conditions. Full-law approximation removes the regularity restrictions from the final theorem. The new 1.97 Cheeger conversion is an additional finite-resolvent entropy argument with an explicit polynomial certificate; it does not import an unformalized heat-semigroup estimate. OpenAI's curvature-dependent regular Poincaré theorem is unused in the endpoint bridge. The <a href="/assets/kls-2026/attachments/technical-report-500.html">Poincaré proof and detailed paper correspondence</a> record the underlying constant 500 checkpoint; the present report supersedes its older Cheeger conversion.</p>
+<h2 id="verification">Verification</h2>
+<p>The accepted baseline remains unchanged. Lean 4.35.0-rc3 and the pinned mathlib checkout are used at kernel trust level 0. Root freshly rebuilt all five final generic-conversion modules and their audits, then separately rebuilt the final numerical endpoint and audited the combined accepted-origin union. The combined added-module audit checks 11,298 declarations, including 10,812 theorems, across 457 declaring modules and 4,516 strict declaration-origin gates. The original 1744-module baseline and all accepted dependency source, object, log and package pins were rechecked. Full source and actual theorem-type reviews cover the numerical specialization, with two independent source reviews for the generic conversion. Every endpoint's recursively collected axiom set is exactly <code>propext</code>, <code>Classical.choice</code>, and <code>Quot.sound</code>; no additional mathematical axiom or admitted proof is used.</p></article></main></body></html>

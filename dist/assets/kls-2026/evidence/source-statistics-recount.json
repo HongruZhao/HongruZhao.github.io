@@ -1,0 +1,41 @@
+{
+  "checked_utc": "2026-10-08T03:58:30.771975+00:00",
+  "commit": "cb6514892b7846d71ae81152293934409a4b4fe4",
+  "method": "Full Git archive; every pinned Lean source read; nested comments removed; anchored theorem/lemma declaration regex with modifiers; Python iterator has no result cap.",
+  "declaration_regex": "^[ \\t]*(?:(?:private|protected|noncomputable|unsafe)\\s+)*(?:theorem|lemma)\\b",
+  "groups": {
+    "audit_or_config": {
+      "files": 1,
+      "physical_lines": 1395,
+      "nonblank_lines": 733,
+      "nonblank_noncomment_lines": 726,
+      "written_theorem_lemma_commands": 0
+    },
+    "support": {
+      "files": 486,
+      "physical_lines": 148102,
+      "nonblank_lines": 135672,
+      "nonblank_noncomment_lines": 117766,
+      "written_theorem_lemma_commands": 5005
+    },
+    "KLS": {
+      "files": 1258,
+      "physical_lines": 115782,
+      "nonblank_lines": 105539,
+      "nonblank_noncomment_lines": 98886,
+      "written_theorem_lemma_commands": 4995
+    }
+  },
+  "all_project_proof_modules": {
+    "files": 1744,
+    "physical_lines": 263884,
+    "nonblank_lines": 241211,
+    "nonblank_noncomment_lines": 216652,
+    "written_theorem_lemma_commands": 10000
+  },
+  "missing_files": [],
+  "hash_mismatches": [],
+  "per_file_differences": [],
+  "result_limit_applied": false,
+  "not_distinct_research_theorems": true
+}

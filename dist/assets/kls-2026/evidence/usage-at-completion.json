@@ -1,0 +1,63 @@
+{
+  "start_utc": "2026-10-06T17:11:24.364Z",
+  "cutoff_utc": "2026-10-07T16:43:40.401Z",
+  "elapsed_seconds": 84736.037,
+  "method": "Sum the last cumulative token_count snapshot at or before the first completion in the main chat and three direct-agent logs. Each log is counted once; copied parent history is not added. Cached input is a subset of input and reasoning output is a subset of output. This is recorded model traffic, not a billing invoice.",
+  "total_usage": {
+    "input_tokens": 2580165752,
+    "cached_input_tokens": 2527900672,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 9806676,
+    "reasoning_output_tokens": 2588230,
+    "total_tokens": 2589972428
+  },
+  "threads": [
+    {
+      "timestamp": "2026-10-07T16:43:40.393Z",
+      "usage": {
+        "input_tokens": 632301594,
+        "cached_input_tokens": 616459904,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2548879,
+        "reasoning_output_tokens": 641950,
+        "total_tokens": 634850473
+      }
+    },
+    {
+      "timestamp": "2026-10-07T16:29:59.184Z",
+      "usage": {
+        "input_tokens": 618538726,
+        "cached_input_tokens": 607199488,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2412471,
+        "reasoning_output_tokens": 689766,
+        "total_tokens": 620951197
+      }
+    },
+    {
+      "timestamp": "2026-10-07T16:22:53.551Z",
+      "usage": {
+        "input_tokens": 662377744,
+        "cached_input_tokens": 649552384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2387050,
+        "reasoning_output_tokens": 616422,
+        "total_tokens": 664764794
+      }
+    },
+    {
+      "timestamp": "2026-10-07T16:41:15.513Z",
+      "usage": {
+        "input_tokens": 666947688,
+        "cached_input_tokens": 654688896,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2458276,
+        "reasoning_output_tokens": 640092,
+        "total_tokens": 669405964
+      }
+    }
+  ],
+  "total_from_cumulative": 2589972428,
+  "noncached_input_tokens": 52265080,
+  "cached_share_of_total": 0.976033815909024
+}

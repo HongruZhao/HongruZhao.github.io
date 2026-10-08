@@ -1,0 +1,59 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Existing Lean statements of KLS: source search · Hongru Zhao</title><link rel="stylesheet" href="/assets/style.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]]}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script></head><body><main class="site-main article-page"><nav><a href="/blog/2026-10-08-kls-conjecture-lean-formalization/">← Back to article</a> · <a href="KLS_Lean_Target_Search.md">Download Markdown</a></nav><article class="article-body"><h1 id="existing-lean-statements-of-kls-source-search">Existing Lean statements of KLS: source search</h1>
+<p>Search date: October 6, 2026. This search concerns existing formal <strong>statements</strong> and whether their sources prove them. A conjecture declaration is distinct from a proof.</p>
+<p>The concrete existing candidate is <strong><code>KLS.KLSConjecture</code> in Job 45 of <code>brando90/conjecture-prover</code></strong>. No matching KLS declaration was located in the pinned mathlib, Formal Conjectures, or LeanEval snapshots below. No pre-existing Poincaré KLS target was located in those libraries. These are bounded findings, not a claim that no other artifact exists.</p>
+<h2 id="exact-existing-target">Exact existing target</h2>
+<ul>
+<li>Repository: <code>brando90/conjecture-prover</code>.</li>
+<li>Revision: <code>715c22ee0b55076591f60b76701cc9428e1b55a4</code>.</li>
+<li>File: <code>proofs/job_45/Job_45.lean</code>.</li>
+<li>Fully qualified declaration: <strong><code>KLS.KLSConjecture</code></strong>, a definition of type <code>Prop</code>.</li>
+<li><a href="https://github.com/brando90/conjecture-prover/blob/715c22ee0b55076591f60b76701cc9428e1b55a4/proofs/job_45/Job_45.lean#L97">Pinned declaration, starting at line 97</a>.</li>
+</ul>
+<p>Its mathematical content is</p>
+<div class="math-display">$$
+\exists c\in\mathbb R,\ c&gt;0,\quad
+\forall n\in\mathbb N,\ n\ge1\Longrightarrow
+\forall\mu:\operatorname{Measure}(\mathbb R^n),\quad
+\operatorname{IsKLSMeasure}(\mu)\Longrightarrow h(\mu)\ge c.
+$$</div>
+<p>This summarizes the actual declaration; the pinned source contains its exact Lean syntax. The ambient space is <code>KLS.Space n</code>, defined using <code>EuclideanSpace ℝ (Fin n)</code>, and the lower bound uses <code>ENNReal.ofReal</code>.</p>
+<p>The statement relies on concrete definitions:</p>
+<ul>
+<li><a href="https://github.com/brando90/conjecture-prover/blob/715c22ee0b55076591f60b76701cc9428e1b55a4/proofs/job_45/Job_45.lean#L35"><code>KLS.HasLogConcaveDensity</code>, line 35</a>: density represented by an exponential of a convex extended-real potential.</li>
+<li><a href="https://github.com/brando90/conjecture-prover/blob/715c22ee0b55076591f60b76701cc9428e1b55a4/proofs/job_45/Job_45.lean#L55"><code>KLS.IsIsotropic</code>, line 55</a>: integrability, mean zero, integrable coordinate products, and identity second-moment matrix.</li>
+<li><a href="https://github.com/brando90/conjecture-prover/blob/715c22ee0b55076591f60b76701cc9428e1b55a4/proofs/job_45/Job_45.lean#L70"><code>KLS.boundaryMeasure</code>, line 70</a>, and <a href="https://github.com/brando90/conjecture-prover/blob/715c22ee0b55076591f60b76701cc9428e1b55a4/proofs/job_45/Job_45.lean#L78"><code>KLS.cheegerConstant</code>, line 78</a>: metric enlargements, outer Minkowski content, and boundary-to-mass ratios.</li>
+<li><a href="https://github.com/brando90/conjecture-prover/blob/715c22ee0b55076591f60b76701cc9428e1b55a4/proofs/job_45/Job_45.lean#L86"><code>KLS.IsKLSMeasure</code>, line 86</a>: probability, absolute continuity, log-concave density, and isotropy.</li>
+</ul>
+<p><strong>Status:</strong> source-inspected statement candidate. Its definitional and conditional proof scripts do not prove this proposition unconditionally. This search did not independently compile it or prove its full semantic correspondence. Before freezing it, require a pinned build, a definition audit, nonempty-class examples, and a formal bridge from measure-based log-concavity to its density-based class. Its older literature-status comments should not determine the status of the October preprints.</p>
+<h2 id="preferred-libraries-and-related-proposals">Preferred libraries and related proposals</h2>
+<table>
+<thead>
+<tr>
+<th>Source snapshot</th>
+<th>Search and result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/leanprover-community/mathlib4/tree/4beb549110aa44b87d699166cece6e3642bddf34">mathlib4 <code>4beb549110aa44b87d699166cece6e3642bddf34</code></a></td>
+<td>Searched all 9,192 Lean files, including Mathlib, Archive, Wanted, and tests. No matching KLS declaration was located. Poincaré and isotropy name matches concerned other subjects. Relevant public issue/PR searches supplied no KLS target.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/google-deepmind/formal-conjectures/tree/89294ea02bd7cd678d59984add52cb4baef3dbf4">Formal Conjectures <code>89294ea02bd7cd678d59984add52cb4baef3dbf4</code></a></td>
+<td>Searched all Lean, Markdown, and TOML sources. No KLS or log-concave-measure statement was located. Public KLS/Kannan issue and PR searches found no candidate.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/leanprover/lean-eval/tree/2e58dff1c3d3aa934614d46205e8f430f9a7ca7e">LeanEval <code>2e58dff1c3d3aa934614d46205e8f430f9a7ca7e</code></a></td>
+<td>Same source scan found no KLS statement. <a href="https://github.com/leanprover/lean-eval/pull/638">PR #638</a> instead states Bourgain's slicing result, with an unfinished proof.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/MColbrook/AIM/tree/c9929805cece044705abaaebe1cebddac1ba11a6">AIM <code>c9929805cece044705abaaebe1cebddac1ba11a6</code></a></td>
+<td>The catalog mentions KLS, but its Lean workspace contains infrastructure and smoke controls rather than an AIM KLS target. Its <a href="https://github.com/MColbrook/AIM/blob/c9929805cece044705abaaebe1cebddac1ba11a6/lean-statements/README.md">workspace README</a> explicitly describes the absence of problem targets.</td>
+</tr>
+</tbody>
+</table>
+<p>The closed, unmerged <a href="https://github.com/leanprover-community/mathlib4/pull/40824">mathlib PR #40824</a> contains a related one-dimensional interval Poincaré inequality. Its declaration is <code>MeasureTheory.lintegral_pow_le_mul_lintegral_pow_deriv_of_integral_eq_zero</code>, in <a href="https://github.com/alejandro-soto-franco/mathlib4/blob/397188b8550d90e06a477b80df597baeb8157388/Mathlib/Analysis/FunctionalSpaces/PoincareInequality.lean#L564">the pinned proposed file</a>. It is not the all-dimensional log-concave KLS statement and is absent from the searched mathlib snapshot.</p>
+<p>Additional checks covered public GitHub code searches, the evand/open-math-problems catalog, OpenTorus's KLS campaign, and Reservoir package metadata. These catalog descriptions and campaign plans supplied no exact KLS Lean declaration. GitHub indexing is incomplete: even known files can be absent from keyword results. Package metadata searches do not audit every registered repository's sources.</p>
+<h2 id="recommendation-for-the-prompt">Recommendation for the prompt</h2>
+<p>Require <strong>both</strong> full formulations. Use the pinned <code>KLS.KLSConjecture</code> as the existing Cheeger candidate, subject to the audits above. Define and review a Poincaré companion if no faithful newer upstream declaration is found. Identify that companion as a new formal statement built on audited definitions and mathlib.</p>
+<p>Prove every formulation bridge used, with explicit conversion constants. Keep Poincaré and reciprocal-Cheeger constants in separate ledgers. Producing both verified endpoints does not identify their sharp constants with each other.</p></article></main></body></html>
