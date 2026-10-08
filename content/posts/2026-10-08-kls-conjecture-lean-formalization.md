@@ -16,6 +16,8 @@ draft: false
 
 In 1995, [Ravi Kannan, László Lovász, and Miklós Simonovits](https://link.springer.com/article/10.1007/BF02574061) conjectured that the best hyperplane cut approximates the optimal isoperimetric bottleneck in a convex body within a universal factor, independent of dimension. In October 2026, several manuscripts claimed a dimension-free bound. I then started a Lean formalization in Codex. Its first completed checkpoint arrived about 23½ hours later.
 
+The Lean source and verification materials are available on [GitHub](https://github.com/HongruZhao/KLS500), with a versioned archive and technical report on [Zenodo](https://doi.org/10.5281/zenodo.23229034).
+
 ## What KLS says
 
 An isotropic law has mean zero and identity covariance. KLS predicts one universal **Poincaré Constant** $C>0$ such that, for every dimension $n\ge1$, every isotropic log-concave probability law $\mu$ on $\mathbb{R}^n$, and every locally Lipschitz function $f$ with finite Dirichlet energy, $f\in L^2(\mu)$ and
