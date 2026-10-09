@@ -66,13 +66,14 @@ In their September 29, 2026 [preprint](https://arxiv.org/pdf/2609.38295v1), Dan 
 
 ## The September–October breakthroughs and their connections
 
-The manuscript versions matter: Song–Zhang's first version retains a log-star dependence, while its second claims a constant bound. Both versions cite Letwin. The other two October manuscripts explicitly refer to the first version.
+The manuscript versions matter: Song–Zhang's first version retains a log-star dependence, while its second claims a constant bound. Both versions cite Letwin. The Bizeul–Klartag–Lehec and October 6 Balasubramanian–Kasiviswanathan versions explicitly refer to Song–Zhang v1.
 
 - **September 29, 17:41 UTC: Mikulincer–Zadik v1.** A dimension-free Poincaré bound for sign-symmetric log-concave laws, the special case discussed above. [Paper](https://arxiv.org/abs/2609.38295v1)
 - **October 1, 10:43 UTC: Song–Zhang v1.** Zhao Song and Xinzhi Zhang obtained $\psi_n=O(4^{\log^*(n+2)})$ and a tilt-derivative criterion. [Version 1](https://arxiv.org/abs/2610.01447v1)
 - **October 4, 19:30 UTC: Bizeul–Klartag–Lehec v1.** Pierre Bizeul, Boaz Klartag, and Joseph Lehec claimed a dimension-free bound using cumulants and suspension. They cite **Song–Zhang v1** for its criterion and **Mikulincer–Zadik** for the earlier symmetric case (introduction; reference [30]). [Paper](https://arxiv.org/pdf/2610.05474v1)
 - **October 4, 21:21 UTC: Song–Zhang v2.** Iterative refinement of polynomial and curvature bounds upgrades the log-star result to $O(1)$. Its bibliography cites Letwin but does not list the October Bizeul–Klartag–Lehec preprint. [Version 2](https://arxiv.org/pdf/2610.01447v2)
 - **October 6, 03:15 UTC: Balasubramanian–Kasiviswanathan snapshot.** Krishnakumar Balasubramanian and Shiva Kasiviswanathan claimed a dimension-free Poincaré bound using compatible integration operators and a rank-uniform Hodge comparison. They cite **Song–Zhang v1** and Letwin; the checked snapshot does not cite Bizeul–Klartag–Lehec. [Pinned manuscript](https://github.com/kriznakumar/paper/blob/4837c33649ba2271f43c9684e9350ecbdd725f95/KLS.pdf)
+- **October 8: Balasubramanian–Kasiviswanathan v2.** Their [arXiv revision](https://arxiv.org/pdf/2610.07728v2) reports the explicit bound $C_P(\mu)\le25$ for every isotropic log-concave probability measure (Theorem 1.1), using a deterministic variational and spectral argument. This revision also cites Bizeul–Klartag–Lehec and Song–Zhang v2. The Lean formalization described below certifies **500**.
 
 [![Selected version-specific citations among the recent KLS papers.](/assets/kls-2026/assets/kls-citation-map.png)](/assets/kls-2026/assets/kls-citation-map.png)
 
