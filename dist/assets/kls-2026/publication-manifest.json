@@ -13,9 +13,10 @@
     {
       "path": "assets/kls-citation-map.png",
       "source_sha256": "322a7269ef257687706b028a645409cd5aae8e44431674ff7aad8c8e6a3b43ab",
-      "published_sha256": "322a7269ef257687706b028a645409cd5aae8e44431674ff7aad8c8e6a3b43ab",
-      "bytes": 185117,
-      "source_unchanged": true
+      "published_sha256": "18991d57cd730fee208f09692a7b552c77fdade3f1675c783f095d7a96813031",
+      "bytes": 234248,
+      "source_unchanged": false,
+      "update_note": "Updated at the author’s request to include the October 8 arXiv v2, its bound of 25, and its citations to Bizeul–Klartag–Lehec and Song–Zhang v2."
     },
     {
       "path": "attachments/KLS_Lean_Astra_Ultra_Prompt.md",
@@ -118,9 +119,10 @@
     {
       "path": "assets/kls-citation-map.svg",
       "source_sha256": "80a841ab7b4d162d706a9940cdc1cfde4dae0b0f8866918e9e1ec9143d37b90f",
-      "published_sha256": "80a841ab7b4d162d706a9940cdc1cfde4dae0b0f8866918e9e1ec9143d37b90f",
-      "bytes": 22685,
-      "source_unchanged": true
+      "published_sha256": "1d609f5c01fa6e3d88af01944ed9f33a5e3cdeafa9b13f43475ae7add6733d6b",
+      "bytes": 28138,
+      "source_unchanged": false,
+      "update_note": "Updated at the author’s request to include the October 8 arXiv v2, its bound of 25, and its citations to Bizeul–Klartag–Lehec and Song–Zhang v2."
     },
     {
       "path": "attachments/actual-six-endpoint-types.txt",
@@ -136,5 +138,12 @@
       "bytes": 9771,
       "source_unchanged": false
     }
-  ]
+  ],
+  "citation_map_revision": {
+    "date": "2026-10-08",
+    "paper": "https://arxiv.org/abs/2610.07728v2",
+    "bound": "C_P(mu) <= 25",
+    "citations_checked": "Section 1.1, final paragraph",
+    "revision_edge": "October 6 manuscript to October 8 arXiv v2"
+  }
 }
