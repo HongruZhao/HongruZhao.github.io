@@ -1,11 +1,12 @@
 ---
 title: A Lean Formalization of the KLS Conjecture with Universal Poincaré Constant
-  at Most 500
+  at Most 15
 date: '2026-10-08'
+updated: '2026-10-09'
 sequence: 6
 category: Convex Geometry and Formal Mathematics
-description: KLS history, recent breakthroughs, and a Lean formalization completed
-  in about 24 hours, with a universal Poincaré constant at most 500.
+description: KLS history, recent breakthroughs, and a Lean formalization, from the
+  earlier bound 500 to an October 9 release with a universal Poincaré constant at most 15.
 image: assets/kls-2026/assets/kls-geometry.png
 image_width: 3520
 image_height: 2068
@@ -16,7 +17,15 @@ draft: false
 
 In 1995, [Ravi Kannan, László Lovász, and Miklós Simonovits](https://link.springer.com/article/10.1007/BF02574061) conjectured that the best hyperplane cut approximates the optimal isoperimetric bottleneck in a convex body within a universal factor, independent of dimension. In October 2026, several manuscripts claimed a dimension-free bound. I then started a Lean formalization in Codex. Its first completed checkpoint arrived about 23½ hours later.
 
-The Lean source and verification materials are available on [GitHub](https://github.com/HongruZhao/KLS500), with a versioned archive and technical report on [Zenodo](https://doi.org/10.5281/zenodo.23229034).
+**October 9 update.** My latest Lean release, **KLS15**, improves the universal Poincaré bound to **15**, building on Balasubramanian–Kasiviswanathan's deterministic variational and spectral framework. The progression of explicit bounds is:
+
+| Development | Poincaré upper bound | Source and verification code |
+|---|---|---|
+| My earlier Lean release, KLS500 | $C_P(\mu)\le500$ | [GitHub](https://github.com/HongruZhao/KLS500) · [Zenodo](https://doi.org/10.5281/zenodo.23229034) |
+| Balasubramanian–Kasiviswanathan, October 8 paper v2 | $C_P(\mu)\le25$ | [Paper](https://arxiv.org/pdf/2610.07728v2) |
+| My latest Lean release, KLS15, October 9 | $C_P(\mu)\le15$ | [GitHub](https://github.com/HongruZhao/KLS15/blob/main/README.md) · [Zenodo](https://zenodo.org/records/23272815) |
+
+The paper supplies the method and bound of 25; the KLS15 release adds quantitative refinements. These are sufficient upper bounds, with no claim of optimality.
 
 ## What KLS says
 
@@ -73,7 +82,7 @@ The manuscript versions matter: Song–Zhang's first version retains a log-star 
 - **October 4, 19:30 UTC: Bizeul–Klartag–Lehec v1.** Pierre Bizeul, Boaz Klartag, and Joseph Lehec claimed a dimension-free bound using cumulants and suspension. They cite **Song–Zhang v1** for its criterion and **Mikulincer–Zadik** for the earlier symmetric case (introduction; reference [30]). [Paper](https://arxiv.org/pdf/2610.05474v1)
 - **October 4, 21:21 UTC: Song–Zhang v2.** Iterative refinement of polynomial and curvature bounds upgrades the log-star result to $O(1)$. Its bibliography cites Letwin but does not list the October Bizeul–Klartag–Lehec preprint. [Version 2](https://arxiv.org/pdf/2610.01447v2)
 - **October 6, 03:15 UTC: Balasubramanian–Kasiviswanathan snapshot.** Krishnakumar Balasubramanian and Shiva Kasiviswanathan claimed a dimension-free Poincaré bound using compatible integration operators and a rank-uniform Hodge comparison. They cite **Song–Zhang v1** and Letwin; the checked snapshot does not cite Bizeul–Klartag–Lehec. [Pinned manuscript](https://github.com/kriznakumar/paper/blob/4837c33649ba2271f43c9684e9350ecbdd725f95/KLS.pdf)
-- **October 8: Balasubramanian–Kasiviswanathan v2.** Their [arXiv revision](https://arxiv.org/pdf/2610.07728v2) reports the explicit bound $C_P(\mu)\le25$ for every isotropic log-concave probability measure (Theorem 1.1), using a deterministic variational and spectral argument. This revision also cites Bizeul–Klartag–Lehec and Song–Zhang v2. The Lean formalization described below certifies **500**.
+- **October 8: Balasubramanian–Kasiviswanathan v2.** Their [arXiv revision](https://arxiv.org/pdf/2610.07728v2) reports the explicit bound $C_P(\mu)\le25$ for every isotropic log-concave probability measure (Theorem 1.1), using a deterministic variational and spectral argument. This revision also cites Bizeul–Klartag–Lehec and Song–Zhang v2. My earlier KLS500 formalization certified **500**; the October 9 KLS15 release improves this to **15**.
 
 [![Selected version-specific KLS citations through the October 8 revision reporting a Poincaré bound of 25.](/assets/kls-2026/assets/kls-citation-map.png?v=18991d57cd73)](/assets/kls-2026/assets/kls-citation-map.png?v=18991d57cd73)
 
@@ -97,24 +106,38 @@ At **15:41 CDT on October 6**, I encouraged a literature-informed shortcut. Thes
 
 > “You can adaptively adjust the blue print. Just make the lean formalization task proper in lean. I trust in you. You can do this.”
 
-The system could revise the blueprint while preserving the theorem. The completed chain mainly follows **Bizeul–Klartag–Lehec's cumulant, suspension, and Taylor-criterion route**, with Letwin's quadratic input and Song–Zhang's endpoint comparison. A weak moment-map argument at $C^{1,1}$ regularity supplied the quadratic seed, avoiding an unused classical-regularity branch. It does not formalize all three papers line by line. [Exact follow-ups](/assets/kls-2026/attachments/selected-follow-up-prompts.html) · [Technical report](/assets/kls-2026/attachments/technical-report.html)
+The system could revise the blueprint while preserving the theorem. The earlier KLS500 chain mainly follows **Bizeul–Klartag–Lehec's cumulant, suspension, and Taylor-criterion route**, with Letwin's quadratic input and Song–Zhang's endpoint comparison. A weak moment-map argument at $C^{1,1}$ regularity supplied the quadratic seed, avoiding an unused classical-regularity branch. It does not formalize all three papers line by line. [Exact follow-ups](/assets/kls-2026/attachments/selected-follow-up-prompts.html) · [Technical report](/assets/kls-2026/attachments/technical-report.html)
 
 Multiple agents worked together on proof development and checking. For the local Lean builds, I authorized up to 17 CPU cores on my **2026 Mac with an M5 Pro chip**, while the final whole-project replay recorded nine concurrent single-threaded Lean compilers. That authorization is not a measurement of continuous CPU utilization.
+
+After learning that Balasubramanian and Kasiviswanathan's [October 8 version 2](https://arxiv.org/pdf/2610.07728v2) obtained a Poincaré bound of **25**, I further improved the bound to **15**, with the result verified in Lean 4. The October 9 KLS15 release adapts their framework and adds quantitative refinements; the [GitHub repository](https://github.com/HongruZhao/KLS15/blob/main/README.md) contains the proof and verification code, and [Zenodo](https://zenodo.org/records/23272815) preserves the release. [Detailed changes](https://github.com/HongruZhao/KLS15/blob/main/DETAILED_CHANGES.md) explain the refinements from the paper.
 
 
 
 ## What the verified project establishes
 
-The accepted endpoint covers every positive dimension and the full isotropic log-concave class, including nonsmooth laws and unbounded support. Its explicit bounds are
+### Latest release: Poincaré constant at most 15
+
+KLS15 covers every positive dimension and every isotropic log-concave probability law, with locally Lipschitz $L^2(\mu)$ test functions:
+
+$$
+\operatorname{Var}_\mu(f)\le15\int\|\nabla f\|^2\,d\mu.
+$$
+
+The public declarations are `KLS15.poincare15` and `KLS15.universalPoincareUpper15`; `KLS15.openaiKLS` retains the unchanged pinned OpenAI statement. The release's verification records report a fresh source rebuild of **1,654 project modules**, with only `propext`, `Classical.choice`, and `Quot.sound` in the final axiom closures. [Theorem source](https://github.com/HongruZhao/KLS15/blob/main/KLS15.lean) · [Verification](https://github.com/HongruZhao/KLS15/blob/main/verification/README.md)
+
+### Earlier constant-500 checkpoint
+
+The earlier KLS500 endpoint covered every positive dimension and the full isotropic log-concave class, including nonsmooth laws and unbounded support. Its recorded bounds were
 
 $$
 C_P(\mu)\le C_*\le500,
 \qquad h(\mu)\ge\frac{100}{197\sqrt{500}}.
 $$
 
-Here $C_*$ is the defined optimal universal Poincaré constant, whose value remains unknown. **500** is a sufficient bound; **1.97** is the Cheeger conversion coefficient. Neither is claimed optimal. Stronger analytic Cheeger–Buser comparisons are known; this article reports the bound formalized in the project. [Comparison](https://cvgmt.sns.it/paper/4217/)
+Here $C_*$ is the defined optimal universal Poincaré constant, whose value remains unknown. **500** was the sufficient bound in that release; **1.97** is its Cheeger conversion coefficient. Neither is claimed optimal. Stronger analytic Cheeger–Buser comparisons are known. [Comparison](https://cvgmt.sns.it/paper/4217/)
 
-The exact combined Lean type is:
+The earlier combined Lean type was:
 
 ```lean
 KLS.dimensionFree500_and_cheeger197 :
