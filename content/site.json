@@ -185,12 +185,11 @@
     },
     {
       "id": "quantum-design",
-      "title": "Optimal and Adaptive Design for Quantum Tomography",
-      "authors": "Hongru Zhao and R. Oliver VandenBerg",
+      "title": "Adaptive quantum tomography by least squares with optimal asymptotic covariance",
+      "authors": "Hongru Zhao and Robert Oliver VandenBerg",
       "year": 2026,
-      "venue": "Coming soon",
-      "hidden": true,
-      "url": "",
+      "venue": "Preprint",
+      "url": "https://github.com/HongruZhao/adaptive-quantum-tomography/blob/main/ejs_main.pdf",
       "topics": [
         "Quantum Information Science",
         "Statistical inference and experimental design"
@@ -198,8 +197,11 @@
       "preprint": true,
       "tags": [
         "experimental-design",
-        "quantum-tomography"
-      ]
+        "quantum-tomography",
+        "sequential-inference"
+      ],
+      "lean_url": "https://github.com/HongruZhao/adaptive-quantum-tomography",
+      "lean_scope": "Lean 4 verification of the nine numbered main results under the stated model and procedure hypotheses; supplementary coverage is documented in the repository. Python simulations are not mechanically verified by Lean."
     },
     {
       "id": "paper-1",
@@ -490,9 +492,9 @@
   ],
   "source": "https://hongruzhao.github.io/",
   "content_checked": "2026-09-11",
-  "cv_updated": "October 2026",
+  "cv_updated": "October 20, 2026",
   "content_sources": [
-    "CV_job_2026_unOfficial.pdf (September 2026)",
+    "CV_job_2026_unOfficial.pdf (October 20, 2026)",
     "Public arXiv records matched by title and author",
     "Existing website for retained projects and links",
     "Statistica Sinica accepted author version for publication status"
