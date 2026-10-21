@@ -502,7 +502,7 @@
   "quantum_subgroups": [
     {
       "id": "gaussian-boson-sampling",
-      "title": "Quantum Sampling & Advantage",
+      "title": "Quantum Sampling & Computational Advantage",
       "paper_ids": [
         "local-anticoncentration",
         "shifted-anticoncentration",
@@ -513,9 +513,8 @@
     },
     {
       "id": "quantum-information-theory",
-      "title": "Quantum Information & Algorithms",
+      "title": "Quantum Information Theory",
       "paper_ids": [
-        "minimax-quantum-tomography",
         "weak-typicality"
       ],
       "fallback_anchor_ids": [
@@ -525,8 +524,9 @@
     },
     {
       "id": "quantum-tomography",
-      "title": "Quantum Characterization & Inference",
+      "title": "Quantum State Estimation",
       "paper_ids": [
+        "minimax-quantum-tomography",
         "quantum-design"
       ],
       "color": "indigo"
