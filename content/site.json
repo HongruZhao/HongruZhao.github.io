@@ -507,20 +507,13 @@
         "local-anticoncentration",
         "shifted-anticoncentration",
         "uniform-hiding",
-        "gram-hafnian-moments"
-      ],
-      "color": "green"
-    },
-    {
-      "id": "quantum-information-theory",
-      "title": "Quantum Information Theory",
-      "paper_ids": [
+        "gram-hafnian-moments",
         "weak-typicality"
       ],
+      "color": "green",
       "fallback_anchor_ids": [
-        "quantum-tomography"
-      ],
-      "color": "violet"
+        "quantum-information-theory"
+      ]
     },
     {
       "id": "quantum-tomography",
