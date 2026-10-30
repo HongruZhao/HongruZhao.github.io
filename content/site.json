@@ -260,8 +260,8 @@
       "authors": "Hongru Zhao, Aaron J. Molstad and Adam J. Rothman",
       "year": 2026,
       "venue": "Electronic Journal of Statistics",
-      "publication_note": "Accepted",
-      "url": "https://arxiv.org/abs/2410.04356",
+      "publication_note": "20(2), 5200–5228",
+      "url": "https://doi.org/10.1214/26-EJS2596",
       "code_url": "https://github.com/HongruZhao/multivariate_categorical_response_regression",
       "topics": [
         "High-dimensional statistics"
@@ -492,9 +492,9 @@
   ],
   "source": "https://hongruzhao.github.io/",
   "content_checked": "2026-09-11",
-  "cv_updated": "October 20, 2026",
+  "cv_updated": "October 30, 2026",
   "content_sources": [
-    "CV_job_2026_unOfficial.pdf (October 20, 2026)",
+    "CV_job_2026_unOfficial.pdf (October 30, 2026)",
     "Public arXiv records matched by title and author",
     "Existing website for retained projects and links",
     "Statistica Sinica accepted author version for publication status"
